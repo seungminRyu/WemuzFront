@@ -5,6 +5,11 @@
  */
 import { policyContents } from "./policyContents.js";
 
+const $policyMenu = document.querySelector(".policy-menu"); // 공지사항 페이지 네비게이션 바
+const $contents = document.querySelector(".contents");  // 페이지 메인 컨텐츠
+const $title = document.querySelector("title") // 페이지 타이틀
+const menuTitles = ["이용약관", "개인정보처리방침", "운영정책", "공지사항"];
+
 function onNoticeItem() {
     const $noticeHeader = document.querySelector(".notice-header");
     const $noticeContents = document.querySelector(".notice-contents");
@@ -16,11 +21,6 @@ function onNoticeItem() {
 }
 
 function onNavItems() {
-    const $policyMenu = document.querySelector(".policy-menu"); // 공지사항 페이지 네비게이션 바
-    const $contents = document.querySelector(".contents");  // 페이지 메인 컨텐츠
-    const $title = document.querySelector("title") // 페이지 타이틀
-    const menuTitles = ["이용약관", "개인정보처리방침", "운영정책", "공지사항"];
-
     for(let i=0; i<4; i++) {
         // 네비게이션 바의 각 메뉴(자식)들의 클릭 이벤트를 설정한다.
         $policyMenu.children[i].addEventListener("click", (e) => {
@@ -37,19 +37,9 @@ function onNavItems() {
     }
 }
 
-function onNavMenuBtn() {
-    const $navMenuBtn = document.querySelector(".policy-menu-btn");
-    const $policyMenu = document.querySelector(".policy-menu");
-
-    $navMenuBtn.addEventListener("click", () => {
-        $policyMenu.classList.toggle("btn-active");
-    });
-}
-
 function init() {
     // 클릭 이벤트 설정
     onNoticeItem();
-    onNavMenuBtn();
     onNavItems();
 }
 

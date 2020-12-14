@@ -6,12 +6,11 @@ body {
 .policy-header {
   position: fixed;
   top: 0;
-  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 5rem;
+  width: 100%;
+  height: 5em;
   border-bottom: 1px solid #e1e1e1;
   background-color: white;
 }
@@ -37,10 +36,6 @@ body {
   margin: 0 auto;
 }
 
-.policy-menu-btn {
-  display: none;
-}
-
 .policy-menu__item {
   text-align: center;
   width: 160px;
@@ -53,28 +48,27 @@ body {
 }
 
 .contents {
-  padding: 80px 50px;
-  line-height: 1.8em;
+  padding: 5rem 3.125rem;
+  line-height: 2em;
 }
 
 .contents h1 {
   font-size: 1.75rem;
   font-weight: bold;
-  margin-bottom: 3rem;
+  line-height: 4.5em;
+  margin-bottom: 2em;
 }
 
 .contents h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 3rem;
-  margin-bottom: 2.5rem;
+  line-height: 4em;
 }
 
 .contents h3 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-top: 2.5rem;
-  margin-bottom: 1.6rem;
+  line-height: 3em;
 }
 
 .contents p {

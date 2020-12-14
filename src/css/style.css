@@ -1,6 +1,5 @@
 @import './reset.css';
 @import './noticePage.css';
-@import './noticePage_mobile.css';
 
 body {
   font-family: sans-serif;
@@ -8,4 +7,13 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.menu li {
+  margin-top: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.menu li:hover {
+  font-size: 20px;
 }
