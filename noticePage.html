@@ -10,18 +10,18 @@
 </head>
 <body>
     <header class="policy-header">
-        <a href="#" class="title-logo"><img src="src/assets/img/wemuz_logo.svg" alt=""></a>
+        <a href="https://www.wemuz.me" class="title-logo"><img src="src/assets/img/wemuz_logo.svg" alt=""></a>
     </header>
     <main>
         <div class="main-container">
-            <div class="menu-bar">
+            <nav class="menu-bar">
                 <ul class="policy-menu">
                     <li class="policy-menu__item terms">이용약관</li>
                     <li class="policy-menu__item privacy">개인정보처리방침</li>
                     <li class="policy-menu__item operation-policy">운영정책</li>
                     <li class="policy-menu__item notices activate-menu">공지사항</li>
                 </ul>
-            </div>
+            </nav>
             <div class="contents">
                 <h1 style="text-align: center;">공지사항</h1>
                 <dl class="notice-table">
@@ -46,14 +46,6 @@
                         <span data-page="4"><img src="/src/assets/icon/icon_page-next.svg" alt=""></span>
                     </div>
                 </dl>
-                <script>
-                    const $noticeHeader = document.querySelector(".notice-header");
-                    const $noticeContents = document.querySelector(".notice-contents");
-                    $noticeHeader.addEventListener("click", () => {
-                        $noticeHeader.classList.toggle("activate-table");
-                        $noticeContents.classList.toggle("activate-table");
-                    });
-                </script>
             </div>
         </div>
     </main>

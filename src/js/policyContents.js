@@ -308,7 +308,7 @@ export const policyContents = [
             <span data-page="1" class="present-page">1</span>
             <span data-page="2">2</span>
             <span data-page="3">3</span>
-            <span data-page="4"><img src="./src/img/icon_page-next.svg" alt=""></span>
+            <span data-page="4"><img src="/src/assets/icon/icon_page-next.svg" alt=""></span>
         </div>
     </dl>
     `
