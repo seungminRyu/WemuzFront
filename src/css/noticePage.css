@@ -1,0 +1,139 @@
+@import './reset.css';
+
+body {
+  background-color: #f4f4f4b0;
+  margin: 0;
+}
+
+.policy-header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: white;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 1024px;
+  background-color: white;
+  margin: 100px auto 100px;
+}
+
+.menu-bar {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.policy-menu {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.policy-menu__item {
+  text-align: center;
+  width: 160px;
+  padding: 31px 0;
+  cursor: pointer;
+}
+
+.activate-menu {
+  border-bottom: 4px solid #785ffa;
+}
+
+.contents {
+  padding: 5rem 3.125rem;
+  line-height: 32px;
+}
+
+.contents h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 72px;
+  margin-bottom: 32px;
+}
+
+.contents h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 64px;
+}
+
+.contents h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.contents p {
+  color: #666666;
+}
+
+.notice-header {
+  background: url('../img/icon_chevron-down.svg') no-repeat 20px center;
+  border-bottom: 1px solid #e1e1e179;
+  padding: 15px 10px 15px 60px;
+  cursor: pointer;
+}
+
+.notice-header strong {
+  display: block;
+  font-size: 1.063rem;
+  font-weight: bold;
+}
+
+.notice-header em {
+  display: block;
+  color: #737373;
+  font-size: 0.75rem;
+}
+
+.notice-contents {
+  display: none;
+  font-size: 0.938rem;
+  color: #737373;
+  line-height: 1.8;
+  background-color: #795ffa1a;
+  border-left: 4px solid #795ffab0;
+  padding: 1rem;
+}
+
+.notice-header.activate-table {
+  background: url('../img/icon_chevron-up.svg') no-repeat 20px center;
+  border-bottom: none;
+}
+
+.notice-contents.activate-table {
+  display: block;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+  color: #737373;
+}
+
+.pagination span {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.pagination img {
+  margin-top: 8px;
+}
+
+.present-page {
+  color: #785ffa;
+  font-weight: bold;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/noticePage.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="policy-header">
+        <a href="#" class="title-logo"><img src="src/img/wemuz_logo.svg" alt=""></a>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="menu-bar">
+                <ul class="policy-menu">
+                    <li class="policy-menu__item terms">이용약관</li>
+                    <li class="policy-menu__item privacy">개인정보처리방침</li>
+                    <li class="policy-menu__item operation-policy">운영정책</li>
+                    <li class="policy-menu__item notices activate-menu">공지사항</li>
+                </ul>
+            </div>
+            <div class="contents">
+                <h1 style="text-align: center;">공지사항</h1>
+                <dl class="notice-table">
+                    <dt class="notice-header" id="test">
+                        <strong>[복구완료] 출석 열람 미션 참여 불가 안내</strong>
+                        <em>2020.11.08</em>
+                    </dt>
+                    <dd class="notice-contents">
+                        <p>안녕하세요.</p>
+                        <p>위뮤즈 운영팀입니다.</p>
+                        <p><br></p>
+                        <p>11월 8일(일) 오전 8:30 ~ 10:00경 출석 열람 미션 참여 후</p>
+                        <p>정상 참여 시에도 미참여로 진행된 유저분들에 대한 복구가 완료되었습니다.</p>
+                        <p><br></p>
+                        <p>관련하여 추가적으로 궁금한 내용이나,</p>
+                        <p>문제가 있으실 경우 앱내 고객센터를 통해 문의해주시길 부탁드리겠습니다.</p>
+                    </dd>
+                    <div class="pagination">
+                        <span data-page="1" class="present-page">1</span>
+                        <span data-page="2">2</span>
+                        <span data-page="3">3</span>
+                        <span data-page="4"><img src="./src/img/icon_page-next.svg" alt=""></span>
+                    </div>
+                </dl>
+                <script>
+                    const $noticeHeader = document.querySelector(".notice-header");
+                    const $noticeContents = document.querySelector(".notice-contents");
+                    $noticeHeader.addEventListener("click", () => {
+                        $noticeHeader.classList.toggle("activate-table");
+                        $noticeContents.classList.toggle("activate-table");
+                    });
+                </script>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./src/js/noticePage.js" type="module"></script>
+</html>
