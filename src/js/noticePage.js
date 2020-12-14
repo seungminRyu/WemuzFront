@@ -10,7 +10,7 @@ const $contents = document.querySelector(".contents");  // 페이지 메인 컨�
 const $title = document.querySelector("title") // 페이지 타이틀
 const menuTitles = ["이용약관", "개인정보처리방침", "운영정책", "공지사항"];
 
-function onClickNotice() {
+function onNoticeItem() {
     const $noticeHeader = document.querySelector(".notice-header");
     const $noticeContents = document.querySelector(".notice-contents");
     
@@ -20,7 +20,7 @@ function onClickNotice() {
     });
 }
 
-function setNavEvent() {
+function onNavItems() {
     for(let i=0; i<4; i++) {
         // 네비게이션 바의 각 메뉴(자식)들의 클릭 이벤트를 설정한다.
         $policyMenu.children[i].addEventListener("click", (e) => {
@@ -29,19 +29,18 @@ function setNavEvent() {
             
             $title.innerText = `위뮤즈 | ${menuTitles[i]}`;
             $contents.innerHTML = policyContents[i];
-            
             // 각각의 공지사항은 클릭 시 해당 글이 나와야함으로 클릭 이벤트를 설정한다.
             if (i === 3) {
-                $contents.innerHTML = policyContents[i];
-                onClickNotice();
+                onNoticeItem();
             }
         });
     }
 }
 
 function init() {
-    onClickNotice();
-    setNavEvent();
+    // 클릭 이벤트 설정
+    onNoticeItem();
+    onNavItems();
 }
 
 init();
