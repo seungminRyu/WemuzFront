@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80px;
+  height: 5em;
   border-bottom: 1px solid #e1e1e1;
   background-color: white;
 }
@@ -49,26 +49,26 @@ body {
 
 .contents {
   padding: 5rem 3.125rem;
-  line-height: 32px;
+  line-height: 2em;
 }
 
 .contents h1 {
   font-size: 1.75rem;
   font-weight: bold;
-  line-height: 72px;
-  margin-bottom: 32px;
+  line-height: 4.5em;
+  margin-bottom: 2em;
 }
 
 .contents h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 64px;
+  line-height: 4em;
 }
 
 .contents h3 {
   font-size: 1.25rem;
   font-weight: bold;
-  line-height: 48px;
+  line-height: 3em;
 }
 
 .contents p {
@@ -78,7 +78,7 @@ body {
 .notice-header {
   background: url('/src/assets/icon/icon_chevron-down.svg') no-repeat 20px center;
   border-bottom: 1px solid #e1e1e179;
-  padding: 15px 10px 15px 60px;
+  padding: 1rem 0.625rem 1rem 3.75rem;
   cursor: pointer;
 }
 
@@ -124,11 +124,11 @@ body {
 
 .pagination span {
   cursor: pointer;
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
 
 .pagination img {
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 .present-page {
