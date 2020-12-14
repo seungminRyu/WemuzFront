@@ -1,3 +1,6 @@
+@import './reset.css';
+@import './noticePage.css';
+
 body {
   font-family: sans-serif;
 }

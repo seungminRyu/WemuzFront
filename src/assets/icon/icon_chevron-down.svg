@@ -1,0 +1,4 @@
+<svg id="icon_chevron-down" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+  <rect id="bound" width="24" height="24" fill="#fff"/>
+  <path id="Icon_awesome-chevron-up" data-name="Icon awesome-chevron-up" d="M10.155,19.381l8.059-8.059a1,1,0,0,0,0-1.407l-.94-.94a1,1,0,0,0-1.406,0L9.451,15.36,3.035,8.973a1,1,0,0,0-1.406,0l-.94.94a1,1,0,0,0,0,1.407l8.059,8.059A1,1,0,0,0,10.155,19.381Z" transform="translate(2.603 -1.317)" fill="#a7a7aa"/>
+</svg>

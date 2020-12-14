@@ -1,5 +1,3 @@
-@import './reset.css';
-
 body {
   background-color: #f4f4f4b0;
   margin: 0;
@@ -78,7 +76,7 @@ body {
 }
 
 .notice-header {
-  background: url('../img/icon_chevron-down.svg') no-repeat 20px center;
+  background: url('/src/assets/icon/icon_chevron-down.svg') no-repeat 20px center;
   border-bottom: 1px solid #e1e1e179;
   padding: 15px 10px 15px 60px;
   cursor: pointer;
@@ -107,7 +105,7 @@ body {
 }
 
 .notice-header.activate-table {
-  background: url('../img/icon_chevron-up.svg') no-repeat 20px center;
+  background: url('/src/assets/icon/icon_chevron-up.svg') no-repeat 20px center;
   border-bottom: none;
 }
 
