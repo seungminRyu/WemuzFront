@@ -33,6 +33,9 @@ function onNavItems() {
             if (i === 3) {
                 onNoticeItem();
             }
+
+            // 이동 시 첫 스크롤로 이동
+            window.scrollTo(0,0);
         });
     }
 }
