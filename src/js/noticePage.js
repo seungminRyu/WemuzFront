@@ -42,7 +42,7 @@ function onNavMenuBtn() {
     const $policyMenu = document.querySelector(".policy-menu");
 
     $navMenuBtn.addEventListener("click", () => {
-        $policyMenu.classList.toggle("btn-active");
+        $policyMenu.classList.toggle("activate-btn");
     });
 }
 

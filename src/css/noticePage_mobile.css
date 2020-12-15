@@ -45,18 +45,19 @@
     height: 48px;
     width: 50%;
     background: none;
-    background-image: url('src/assets/icon/icon_chevron-down.svg');
+    background-image: url('../assets/icon/icon_chevron-down.svg');
     background-repeat: no-repeat;
-    background-position: 94% center;
+    background-position: 88% center;
     border: none;
     outline: none;
   }
 
-  .btn-active + .policy-menu-btn {
-    background-image: url('src/assets/icon/icon_chevron-up.svg');
+  .activate-btn + .policy-menu-btn {
+    background-image: url('../assets/icon/icon_chevron-up.svg');
+    z-index: -1;
   }
 
-  .btn-active .policy-menu__item {
+  .activate-btn .policy-menu__item {
     display: list-item;
   }
 
