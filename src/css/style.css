@@ -1,11 +1,17 @@
 @import './reset.css';
-@import './noticePage.css';
-@import './noticePage_mobile.css';
 
 body {
   font-family: sans-serif;
+  background: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
 }
 
 a {
   text-decoration: none;
+  margin-bottom: 8px;
 }
