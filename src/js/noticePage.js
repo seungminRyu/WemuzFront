@@ -21,6 +21,8 @@ function onNavItems() {
     const $title = document.querySelector("title") // 페이지 타이틀
     const menuTitles = ["이용약관", "개인정보처리방침", "운영정책", "공지사항"];
 
+    menuTitles.splice
+
     for(let i=0; i<4; i++) {
         // 네비게이션 바의 각 메뉴(자식)들의 클릭 이벤트를 설정한다.
         $policyMenu.children[i].addEventListener("click", (e) => {

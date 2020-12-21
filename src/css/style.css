@@ -1,4 +1,6 @@
 @import './reset.css';
+@import './noticePage.css';
+@import './noticePage_mobile.css';
 
 body {
   font-family: sans-serif;

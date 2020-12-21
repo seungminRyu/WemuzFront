@@ -121,6 +121,7 @@
   position: relative;
   display: flex;
   height: 100vh;
+  width: 100vw;
   align-items: center;
   background-color: rgba(238, 130, 238, 0.123);
   overflow: hidden;
@@ -162,7 +163,7 @@
   color: var(--wemuz-purple);
   opacity: 0;
   animation: fade-in 0.8s ease-in-out forwards;
-  animation-play-state: paused;
+  animation-play-state: running;
 }
 
 .intro__text h2 {
@@ -172,7 +173,7 @@
   color: var(--wemuz-purple);
   opacity: 0;
   animation: fade-in 0.8s ease-in-out 0.1s forwards;
-  animation-play-state: paused;
+  animation-play-state: running;
 }
 
 .intro__text p {
@@ -182,7 +183,7 @@
   margin-top: 52px;
   opacity: 0;
   animation: fade-in 0.8s ease-in-out 0.2s forwards;
-  animation-play-state: paused;
+  animation-play-state: running;
 }
 
 .text-main {
@@ -457,7 +458,6 @@
   *
   */
 @media screen and (max-width: 48rem) {
-  .intro__mukathon-photo,
   .mockup-img-1 {
     display: none;
   }
@@ -469,11 +469,8 @@
   }
 
   .intro__section:last-child {
-    /*
-      background: url('/static/img/intro/img/slide-1.png') no-repeat center center;
-      background-size: cover;
-      */
-    background-color: wheat;
+    background-size: cover;
+    background-color: rgba(128, 128, 128, 0.459);
   }
 
   .photo-section--mobile {
@@ -662,6 +659,11 @@
   .text-3 p,
   .mukathon {
     display: none;
+  }
+
+  .intro__mukathon-photo {
+    height: 100%;
+    overflow: visible;
   }
 
   .slider-btn--pre {
