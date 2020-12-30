@@ -1,0 +1,75 @@
+.Wemuz {
+  background: rgba(50, 205, 252, 0.349); /* For Dev */
+}
+
+.mobile {
+  display: none;
+}
+
+.Wemuz__section-1,
+.Wemuz__section-2,
+.Wemuz__section-3 {
+  border: 3px solid royalblue; /* For Dev */
+}
+
+.Wemuz__withWemuz {
+  max-width: 1160px;
+  text-align: end;
+  margin: 0 auto;
+}
+
+.Wemuz__withWemuz h2 {
+  margin-right: 64px;
+}
+
+.Wemuz__withWemuz div {
+  border: 2px solid darkorange;
+  border-radius: 8px;
+  padding: 334px 64px 40px 0;
+  margin-top: 28px;
+}
+
+.Wemuz__staffs {
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.Wemuz__sponsors h2 {
+  max-width: 1160px;
+  padding-left: 48px;
+  margin: 0 auto;
+}
+
+.Wemuz__sponsor-list {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .withWemuz__image {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .Wemuz__withWemuz {
+    text-align: start;
+  }
+
+  .Wemuz__withWemuz div {
+    padding: 0;
+    margin-top: 18px;
+  }
+
+  .staffs-nav {
+    display: inline;
+  }
+
+  .Wemuz__staffs {
+    display: block;
+  }
+}

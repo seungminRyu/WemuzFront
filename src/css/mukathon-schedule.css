@@ -1,0 +1,89 @@
+.Schedule {
+  background: rgba(238, 252, 50, 0.349); /* For Dev */
+}
+
+.Schedule__section-1 {
+  border: 3px solid royalblue; /* For Dev */
+  text-align: center;
+}
+
+.Schedule__week-plan {
+  width: 724px;
+  margin: 81px auto 0;
+}
+
+.week-plan__plan-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.week-plan__plan {
+  display: flex;
+  width: 300px;
+  padding: 22px 20px;
+  justify-content: space-between;
+}
+
+.week-plan__plan:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.week-plan__plan:nth-child(even) {
+  align-self: flex-end;
+}
+
+.Schedule__section-2 {
+  border: 3px solid royalblue; /* For Dev */
+  display: flex;
+  flex-direction: column;
+  padding: 40px auto;
+}
+
+.Schedule__planDetail-wrapper {
+  width: fit-content;
+  margin: 118px auto;
+}
+
+.Schedule__planDetail {
+  float: left;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .Schedule__week-plan {
+    width: fit-content;
+    margin: 81px auto 0;
+  }
+
+  .week-plan__plan-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .week-plan__plan {
+    display: flex;
+    width: 274px;
+    padding: 17px 14px;
+    justify-content: space-between;
+  }
+
+  .Schedule__planDetail-slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .Schedule__planDetail-wrapper {
+    display: flex;
+  }
+
+  .Schedule__planDetail {
+    width: 304px;
+  }
+
+  .Schedule__planDetail img {
+    display: block;
+    width: 264px;
+    margin: 10px auto;
+  }
+}

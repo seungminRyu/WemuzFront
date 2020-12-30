@@ -1,0 +1,76 @@
+.Cooperation {
+  background: rgba(73, 252, 50, 0.349); /* For Dev */
+}
+
+.Cooperation__section-1 {
+  border: 3px solid royalblue; /* For Dev */
+}
+
+.Cooperation__ms-music {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.ms-music__info-wrapper {
+  display: flex;
+}
+
+.Cooperation__section-2 {
+  border: 3px solid royalblue; /* For Dev */
+}
+
+.Cooperation__wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.Cooperation__mentor-slider {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Cooperation__mentor-wrapper {
+  border: 2px solid palevioletred; /* For Dev */
+  display: flex;
+  width: fit-content;
+  margin-right: 120px;
+}
+
+.mentor-info {
+  width: 512px;
+  padding: 64px 56px;
+  box-sizing: border-box;
+}
+
+.mentor-info h4,
+.mentor-info h5 {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .ms-music__info-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .ms-music__photo {
+    width: 300px;
+  }
+
+  .Cooperation__mentor-wrapper {
+    display: block;
+    margin-right: 12px;
+  }
+
+  .mentor-photo {
+    width: 282px;
+  }
+
+  .mentor-info {
+    width: 262px;
+    background-color: #fff;
+    padding: 16px 12px;
+    margin: -20px auto 0;
+  }
+}

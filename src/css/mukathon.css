@@ -1,2 +1,10 @@
 @import './reset.css';
 @import './mukathon-intro.css';
+@import './mukathon-schedule.css';
+@import './mukathon-cooperation.css';
+@import './mukathon-wemuz.css';
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
