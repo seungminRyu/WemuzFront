@@ -1,37 +1,91 @@
-.Intro {
-  background: rgba(252, 50, 50, 0.349); /* For Dev */
-}
+/********************
+날짜: 2020/01/04
+작성자: 유승민
+설명: 뮤커톤 소개 / 뮤커톤만의 혜택
+*********************/
 
-.Intro__section-1 {
-  border: 3px solid royalblue; /* For Dev */
-}
-
+/* 
+  Start Intro Desktop size
+ */
+/* Start Intro - section1 */
+/* Start Intro - Top header */
 .Intro__header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  color: white;
+  background: url('/src/assets/img/mukathon_top-bg.png') no-repeat center center;
+  background-size: cover;
+  padding: 164px 111px;
 }
 
+.Intro__header span {
+  font-size: 20px;
+}
+
+.Intro__header span::before,
+.Intro__header span::after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 24px;
+  border-radius: 1px;
+  background-color: white;
+  margin: 0 12px 4px 12px;
+}
+
+.Intro__header h1 {
+  margin-top: 36px;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+}
+/* End Intro - Top header */
+
+/* Start Intro - What is Mukathon? */
 .Intro__whatIs {
+  padding: 128px 0 158px;
+}
+
+.Intro__whatIs-wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1024px;
   margin: 0 auto;
 }
 
+.whatIs__head {
+  color: var(--wemuz-purple);
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.whatIs__description {
+  color: var(--wemuz-black);
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 28px;
+}
+
 .Intro__whatIs-video iframe {
-  width: 560px; /* For Desktop */
-  height: 315px; /* For Desktop */
+  width: 576px; /* For Desktop */
+  height: 324px; /* For Desktop */
 }
+/* End Intro - What is Mukathon?  */
+/* End Intro - section1 */
 
-.Intro__section-2 {
-  border: 3px solid royalblue; /* For Dev */
-}
-
+/* Start Intro - section2 */
+/* Start Intro - benefits */
 .Intro__benefit-header {
   max-width: 1440px;
   text-align: center;
+  font-size: 32px;
+  color: var(--wemuz-white-gray);
+  background: url('/src/assets/img/mukathon_benefits-bg.png') no-repeat center center;
+  background-size: cover;
   padding: 123px 0; /* For Desktop */
+  margin: 0 auto;
 }
 
 .Intro__benefit-wrapper {
@@ -41,6 +95,38 @@
   margin: 0 auto;
 }
 
+.Intro__benefit {
+  margin: 80px 0 116px;
+}
+
+.Intro__benefit span {
+  color: var(--wemuz-white-gray);
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.Intro__benefit h3 {
+  color: var(--wemuz-black);
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: -34px;
+}
+
+.Intro__benefit p {
+  color: var(--wemuz-dark-gray);
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 24px;
+}
+/* End Intro - benefits */
+/* End Intro - section2 */
+/* 
+  End Intro Desktop size
+ */
+
+/* 
+  Start Intro Mobile size
+ */
 @media screen and (max-width: 768px) {
   .br-desktop {
     display: none;
@@ -81,3 +167,6 @@
     display: block;
   }
 }
+/* 
+  End Intro Mobile size
+ */
