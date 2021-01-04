@@ -1,3 +1,6 @@
+@import '../reset.css';
+@import '../style.css';
+
 body {
   background-color: #f4f4f4b0;
   margin: 0;
@@ -140,4 +143,81 @@ body {
 .present-page {
   color: #785ffa;
   font-weight: bold;
+}
+
+@media screen and (max-width: 48rem) {
+  .policy-header {
+    height: 56px;
+    z-index: 1;
+  }
+
+  .policy-header img {
+    width: 120px;
+  }
+
+  .main-container {
+    width: 100%;
+    margin-top: 56px;
+  }
+
+  .menu-bar {
+    position: fixed;
+    top: 57px;
+    background-color: white;
+    height: fit-content;
+  }
+
+  .policy-menu {
+    flex-direction: column;
+    margin-left: 12px;
+  }
+
+  .policy-menu__item {
+    display: none;
+    text-align: start;
+    padding: 16px;
+  }
+
+  .activate-menu {
+    display: list-item;
+    font-weight: bold;
+    border: none;
+  }
+
+  .policy-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 48px;
+    width: 50%;
+    background: none;
+    background-image: url('../assets/icon/icon_chevron-down.svg');
+    background-repeat: no-repeat;
+    background-position: 88% center;
+    border: none;
+    outline: none;
+  }
+
+  .activate-btn + .policy-menu-btn {
+    background-image: url('../assets/icon/icon_chevron-up.svg');
+    z-index: -1;
+  }
+
+  .activate-btn .policy-menu__item {
+    display: list-item;
+  }
+
+  .contents {
+    padding: 80px 20px;
+  }
+
+  .notice-header {
+    line-height: 1.4em;
+    padding: 0.6rem 0.6rem 0.6rem 3.75rem;
+  }
+
+  .notice-header em {
+    margin-top: 10px;
+  }
 }

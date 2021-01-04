@@ -1,4 +1,5 @@
-@import './reset.css';
+@import '../style.css';
+@import '../reset.css';
 @import './mukathon-intro.css';
 @import './mukathon-schedule.css';
 @import './mukathon-cooperation.css';
