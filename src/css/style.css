@@ -1,19 +1,33 @@
-@import './reset.css';
-@import './noticePage.css';
-@import './noticePage_mobile.css';
+/********************
+날짜: 2020/01/04
+작성자: 유승민
+설명: 위뮤즈 기본 style
+*********************/
 
+/* 나눔스퀘어라운드 - Regular(nomal) */
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('/src/assets/font/NanumSquareRoundR.ttf') format('truetype');
+  font-weight: normal;
+}
+
+/* 나눔스퀘어라운드 - Bold(500) */
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('/src/assets/font/NanumSquareRoundB.ttf') format('truetype');
+  font-weight: 500;
+}
+
+/* 나눔스퀘어라운드 - Extra Bold(700) */
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('/src/assets/font/NanumSquareRoundEB.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* 위뮤즈 기본 폰트 - 나눔스퀘어라운드 */
 body {
-  font-family: sans-serif;
+  font-family: NanumSquareRound, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: white;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 10px;
-}
-
-a {
-  text-decoration: none;
-  margin-bottom: 8px;
 }
