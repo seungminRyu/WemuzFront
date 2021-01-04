@@ -1,27 +1,90 @@
-.Schedule {
-  background: rgba(238, 252, 50, 0.349); /* For Dev */
-}
+/*********************
+ 날짜: 2020/01/04
+ 작성자: 유승민
+ 설명: 뮤커톤 페이지 - 뮤커톤 활동 일정
+**********************/
 
+/* Start Schedule Desktop size */
+/* Start Schedule > section1 */
 .Schedule__section-1 {
-  border: 3px solid royalblue; /* For Dev */
+  position: relative;
+  background: #ebe6f5;
   text-align: center;
+  z-index: -1;
+  padding: 132px 0 275px;
 }
 
+.Schedule__bg-objects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-object {
+  position: absolute;
+  height: 36px;
+  border-radius: 18px;
+}
+
+/* !! object's position and color is defined in html !!*/
+.--object-short {
+  width: 180px;
+}
+
+.--object-long {
+  width: 280px;
+}
+
+/* Start Schedule > section1 > week plan */
 .Schedule__week-plan {
+  position: relative;
   width: 724px;
-  margin: 81px auto 0;
+  margin: 0 auto 0;
+}
+
+.Schedule__week-plan h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.week-plan__plan-list::before {
+  position: absolute;
+  top: 152px;
+  left: 356px;
+  content: '';
+  height: 538px;
+  width: 20px;
+  background: url('/src/assets/img/mukathon_schedule-obj.svg') no-repeat center center;
 }
 
 .week-plan__plan-list {
   display: flex;
   flex-direction: column;
+  margin-top: 81px;
 }
 
 .week-plan__plan {
   display: flex;
-  width: 300px;
-  padding: 22px 20px;
+  align-items: center;
   justify-content: space-between;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 1.5px 1.3px 4px #00000021;
+  box-sizing: border-box;
+  padding: 23px 20px;
+  margin-top: 9px;
+}
+
+.week-plan__plan span:nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.week-plan__plan span:nth-child(2) {
+  font-size: 16px;
+  color: var(--wemuz-dark-gray);
 }
 
 .week-plan__plan:nth-child(odd) {
@@ -31,12 +94,19 @@
 .week-plan__plan:nth-child(even) {
   align-self: flex-end;
 }
+/* End Schedule > section1 > week plan */
+/* End Schedule > section1 */
 
+/* Start Schedule > section2 */
 .Schedule__section-2 {
-  border: 3px solid royalblue; /* For Dev */
   display: flex;
   flex-direction: column;
-  padding: 40px auto;
+  padding-bottom: 146px;
+}
+
+/* Start Schedule > section2 > plan detail slider */
+.Schedule__planDetail-slider {
+  margin-top: -281px;
 }
 
 .Schedule__planDetail-wrapper {
@@ -44,11 +114,45 @@
   margin: 118px auto;
 }
 
+/* Start Schedule > section2 > plan detail slider > plan detail */
 .Schedule__planDetail {
   float: left;
+  width: 334px;
+  box-sizing: border-box;
   margin-right: 10px;
 }
 
+.planDetail__text {
+  color: #fff;
+  padding: 32px 24px 32px;
+  margin-top: 2px;
+}
+
+.planDetail__text h3 {
+  font-size: 20px;
+}
+
+.planDetail__text p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 26px;
+}
+
+.Schedule__planDetail:nth-child(1) .planDetail__text {
+  background-color: var(--wemuz-light-purple);
+}
+.Schedule__planDetail:nth-child(2) .planDetail__text {
+  background-color: var(--wemuz-purple);
+}
+.Schedule__planDetail:nth-child(3) .planDetail__text {
+  background-color: var(--wemuz-deep-purple);
+}
+/* End Schedule > section2 > plan detail slider > plan detail */
+/* End Schedule > section2 > plan detail slider */
+/* End Schedule > section2 */
+/* End Schedule Desktop size */
+
+/* Start Schedule Mobile size */
 @media screen and (max-width: 768px) {
   .Schedule__week-plan {
     width: fit-content;
@@ -87,3 +191,4 @@
     margin: 10px auto;
   }
 }
+/* End Schedule Mobile size */

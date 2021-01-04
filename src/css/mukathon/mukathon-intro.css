@@ -1,14 +1,12 @@
 /********************
 날짜: 2020/01/04
 작성자: 유승민
-설명: 뮤커톤 소개 / 뮤커톤만의 혜택
+설명: 뮤커톤 페이지 - 뮤커톤 소개, 뮤커톤만의 혜택
 *********************/
 
-/* 
-  Start Intro Desktop size
- */
-/* Start Intro - section1 */
-/* Start Intro - Top header */
+/* Intro Desktop size */
+/* Start Intro */
+/* Start Intro > section1 > top header */
 .Intro__header {
   display: flex;
   flex-direction: column;
@@ -40,9 +38,9 @@
   line-height: 52px;
   text-align: center;
 }
-/* End Intro - Top header */
+/* End Intro > section1 > top header */
 
-/* Start Intro - What is Mukathon? */
+/* Start Intro > section1 > What is Mukathon? */
 .Intro__whatIs {
   padding: 128px 0 158px;
 }
@@ -62,7 +60,6 @@
 }
 
 .whatIs__description {
-  color: var(--wemuz-black);
   font-size: 16px;
   line-height: 26px;
   margin-top: 28px;
@@ -72,15 +69,16 @@
   width: 576px; /* For Desktop */
   height: 324px; /* For Desktop */
 }
-/* End Intro - What is Mukathon?  */
-/* End Intro - section1 */
+/* End Intro > section1 > What is Mukathon?  */
+/* End Intro > section1 */
 
-/* Start Intro - section2 */
-/* Start Intro - benefits */
+/* Start Intro > section2 */
+/* Start Intro > section2 > benefits */
 .Intro__benefit-header {
   max-width: 1440px;
   text-align: center;
   font-size: 32px;
+  font-weight: 500;
   color: var(--wemuz-white-gray);
   background: url('/src/assets/img/mukathon_benefits-bg.png') no-repeat center center;
   background-size: cover;
@@ -106,7 +104,6 @@
 }
 
 .Intro__benefit h3 {
-  color: var(--wemuz-black);
   font-size: 20px;
   line-height: 30px;
   margin-top: -34px;
@@ -118,15 +115,11 @@
   line-height: 22px;
   margin-top: 24px;
 }
-/* End Intro - benefits */
-/* End Intro - section2 */
-/* 
-  End Intro Desktop size
- */
+/* End Intro > section2 > benefits */
+/* End Intro > section2 */
+/* End Intro Desktop size */
 
-/* 
-  Start Intro Mobile size
- */
+/* Intro Mobile size */
 @media screen and (max-width: 768px) {
   .br-desktop {
     display: none;
