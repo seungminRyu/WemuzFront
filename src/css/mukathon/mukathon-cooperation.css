@@ -1,22 +1,107 @@
+/*********************
+ 날짜: 2020/01/04
+ 작성자: 유승민
+ 설명: 뮤커톤 페이지 - 뮤커톤 협력 업체 소개
+**********************/
+
+/* Start Cooperation Desktop size */
 .Cooperation {
-  background: rgba(73, 252, 50, 0.349); /* For Dev */
+  position: relative;
+  overflow: hidden;
 }
 
+.Cooperation__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.point-bg {
+  max-width: 960px;
+  height: 1360px;
+  background-color: #f1f1f1;
+  margin-right: 50%;
+}
+
+.point-obj1 {
+  position: absolute;
+  top: -100px;
+  right: -30px;
+  width: 422px;
+  height: 391px;
+  background: url('/src/assets/img/mukathon_point-obj_1.svg') no-repeat center center;
+}
+
+.point-obj2 {
+  position: absolute;
+  top: 426px;
+  left: -70px;
+  width: 241px;
+  height: 216px;
+  background: url('/src/assets/img/mukathon_point-obj_2.svg') no-repeat center center;
+}
+
+/* Start Cooperation > section1 */
 .Cooperation__section-1 {
-  border: 3px solid royalblue; /* For Dev */
+  padding-top: 124px;
+  padding-bottom: 121px;
 }
 
+/* Start Cooperation > section1 > ms-mucic */
 .Cooperation__ms-music {
   width: 1024px;
   margin: 0 auto;
 }
 
-.ms-music__info-wrapper {
-  display: flex;
+.Cooperation__ms-music h2 {
+  font-size: 32px;
+  font-weight: 500;
 }
 
+.ms-music__info-wrapper {
+  display: flex;
+  margin-top: 48px;
+}
+
+.ms-music__photo {
+  width: 558px;
+  height: 392px;
+  object-fit: cover;
+}
+
+.ms-music__info {
+  padding-left: 70px;
+}
+
+.ms-music__info img {
+  display: block;
+}
+
+.ms-music__info span {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: var(--wemuz-purple);
+  padding: 9px 12px;
+  margin-top: 24px;
+}
+
+.ms-music__info p {
+  margin-top: 22px;
+  font-size: 16px;
+  line-height: 34px;
+  color: var(--wemuz-dark-gray);
+}
+/* End Cooperation > section1 > ms-mucic */
+/* End Cooperation > section1 */
+
+/* Start Cooperation > section2 */
 .Cooperation__section-2 {
-  border: 3px solid royalblue; /* For Dev */
+  padding-bottom: 91px;
 }
 
 .Cooperation__wrapper {
@@ -24,14 +109,32 @@
   margin: 0 auto;
 }
 
+.Cooperation__wrapper h3 {
+  font-size: 24px;
+}
+
+.Cooperation__wrapper h3::before {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  width: 8px;
+  height: 28px;
+  align-self: center;
+  border-radius: 4px;
+  background-color: var(--wemuz-purple);
+  margin-right: 12px;
+}
+
+/* Start Cooperation > section2 > mentor slider */
 .Cooperation__mentor-slider {
+  position: relative;
   display: flex;
   width: 100%;
   overflow: hidden;
+  margin-top: 36px;
 }
 
-.Cooperation__mentor-wrapper {
-  border: 2px solid palevioletred; /* For Dev */
+.mentor-slider__slide {
   display: flex;
   width: fit-content;
   margin-right: 120px;
@@ -39,13 +142,54 @@
 
 .mentor-info {
   width: 512px;
-  padding: 64px 56px;
   box-sizing: border-box;
+  background-color: var(--wemuz-black);
+  padding: 64px 56px;
 }
 
-.mentor-info h4,
-.mentor-info h5 {
+.mentor-info h4 {
+  font-size: 24px;
+  color: #7ea2f4;
   text-align: center;
+}
+
+.mentor-info h5 {
+  font-size: 16px;
+  color: var(--wemuz-gray);
+  text-align: center;
+  margin-top: 8px;
+}
+
+.mentor-info p {
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--wemuz-white-gray);
+  margin-top: 48px;
+}
+
+.mentor-slider__button-wrapper {
+  position: absolute;
+  top: 190px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.slider-btn {
+  width: 100px;
+  height: 100px;
+  border: none;
+}
+/* End Cooperation > section2 > mentor slider */
+/* End Cooperation > section2 */
+/* End Cooperation Desktop size */
+
+.--previous-btn {
+  background: url('/src/assets/icon/mentor-slider_prev-btn.svg') no-repeat center center;
+}
+
+.--next-btn {
+  background: url('/src/assets/icon/mentor-slider_next-btn.svg') no-repeat center center;
 }
 
 @media screen and (max-width: 768px) {
