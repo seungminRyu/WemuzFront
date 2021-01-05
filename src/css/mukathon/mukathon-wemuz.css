@@ -1,17 +1,32 @@
-.Wemuz {
-  background: rgba(50, 205, 252, 0.349); /* For Dev */
-}
+/*********************
+ 날짜: 2020/01/05
+ 작성자: 유승민
+ 설명: 뮤커톤 페이지 - 뮤커톤 X 위뮤즈, 뮤커톤 후원 업체
+**********************/
 
+/* Start Wemuz */
 .mobile {
   display: none;
 }
 
-.Wemuz__section-1,
-.Wemuz__section-2,
-.Wemuz__section-3 {
-  border: 3px solid royalblue; /* For Dev */
+/* Start Wemuz > section1 */
+.Wemuz__section-1 {
+  position: relative;
+  padding-top: 225px;
 }
 
+.Wemuz__bg-whyUs {
+  position: absolute;
+  top: 158px;
+  left: -12px;
+  width: 824px;
+  height: 150px;
+  background: url('/src/assets/img/withWemuz_why_us.png') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Start Wemuz > section1 > with wemuz */
 .Wemuz__withWemuz {
   max-width: 1160px;
   text-align: end;
@@ -19,35 +34,148 @@
 }
 
 .Wemuz__withWemuz h2 {
+  font-size: 32px;
+  font-weight: 500;
   margin-right: 64px;
 }
 
-.Wemuz__withWemuz div {
-  border: 2px solid darkorange;
+.Wemuz__description {
+  font-size: 20px;
+  line-height: 32px;
+  color: #fff;
   border-radius: 8px;
+  background: url('/src/assets/img/withWemuz_bg.png') no-repeat center center;
+  background-size: cover;
   padding: 334px 64px 40px 0;
   margin-top: 28px;
 }
+/* End Wemuz > section1 > with wemuz */
+/* End Wemuz > section1 */
 
+/* Start Wemuz > section2 */
+.Wemuz__section-2 {
+  padding-top: 86px;
+}
+
+/* Start Wemuz > section2 > wemuz staffs */
 .Wemuz__staffs {
   display: flex;
-  max-width: 1160px;
+  justify-content: space-between;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
+.Wemuz__staffs-wrapper {
+  display: flex;
+}
+
+.Wemuz__staffs h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--wemuz-dark-gray);
+}
+
+.Wemuz__staffs h3::before {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  width: 8px;
+  height: 28px;
+  align-self: center;
+  border-radius: 4px;
+  background-color: var(--wemuz-purple);
+  margin-right: 12px;
+}
+
+.staffs__staff {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  align-items: center;
+  margin-left: 68px;
+}
+
+.staff-photo {
+  width: 280px;
+  height: 280px;
+}
+
+.staffs__staff:nth-child(1) .staff-photo {
+  background: url('/src/assets/img/withWemuz_minchan.png') no-repeat center center;
+  background-size: cover;
+}
+.staffs__staff:nth-child(2) .staff-photo {
+  background: url('/src/assets/img/withWemuz_jinuk.png') no-repeat center center;
+  background-size: cover;
+}
+
+.staff-info {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 278px;
+  height: 278px;
+  color: #fff;
+  line-height: 30px;
+  border-radius: 8px;
+  background-color: #292545cc;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+  padding-left: 34px;
+  padding-bottom: 26px;
+}
+
+.staffs__staff:hover .staff-info {
+  opacity: 100%;
+}
+
+.staff-name {
+  font-size: 16px;
+  margin-top: 24px;
+}
+/* End Wemuz > section2 > wemuz staffs */
+/* End Wemuz > section2 */
+
+/* Start Wemuz > section3 */
+/* Start Wemuz > section3 > sponsors */
+.Wemuz__section-3 {
+  padding-top: 80px;
+}
+
 .Wemuz__sponsors h2 {
-  max-width: 1160px;
-  padding-left: 48px;
+  max-width: 1024px;
+  font-size: 32px;
+  font-weight: 500;
   margin: 0 auto;
+}
+
+.Wemuz__sponsor-wrapper {
+  background-color: #ebe6f5;
+  border-bottom: 1px solid #6b5fa762;
+  margin-top: 28px;
+  padding: 52px 0 64px;
 }
 
 .Wemuz__sponsor-list {
   display: flex;
-  justify-content: space-around;
-  max-width: 1160px;
+  justify-content: space-between;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
+.sponsors__sponsor p {
+  margin-top: 24px;
+}
+/* End Wemuz > section3 > sponsors */
+/* End Wemuz > section3 */
+/* End Wemuz Desktop size */
+
+/* Start Wemuz Mobile size */
 @media screen and (max-width: 768px) {
   .withWemuz__image {
     display: block;
@@ -73,3 +201,4 @@
     display: block;
   }
 }
+/* End Wemuz Mobile size */

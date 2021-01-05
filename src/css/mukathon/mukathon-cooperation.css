@@ -104,16 +104,24 @@
   padding-bottom: 91px;
 }
 
-.Cooperation__wrapper {
+.Cooperation__mentor {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Cooperation__header {
   width: 1024px;
   margin: 0 auto;
 }
 
-.Cooperation__wrapper h3 {
+.Cooperation__header h3 {
   font-size: 24px;
+  font-weight: 500;
+  color: var(--wemuz-dark-gray);
 }
 
-.Cooperation__wrapper h3::before {
+.Cooperation__header h3::before {
   content: '';
   display: inline-block;
   vertical-align: bottom;
@@ -127,14 +135,14 @@
 
 /* Start Cooperation > section2 > mentor slider */
 .Cooperation__mentor-slider {
-  position: relative;
   display: flex;
   width: 100%;
-  overflow: hidden;
   margin-top: 36px;
+  transform: translateX(calc(-1144px + 50vw - 512px));
 }
 
 .mentor-slider__slide {
+  position: relative;
   display: flex;
   width: fit-content;
   margin-right: 120px;
@@ -167,9 +175,22 @@
   margin-top: 48px;
 }
 
+.mentor-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 512px;
+  background-color: #292545cb;
+}
+
+.--active-slide .mentor-overlay {
+  opacity: 0;
+}
+
 .mentor-slider__button-wrapper {
   position: absolute;
-  top: 190px;
+  top: 250px;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -179,19 +200,21 @@
   width: 100px;
   height: 100px;
   border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.--previous-btn {
+  background: url('/src/assets/icon/mentor-slider_prev-btn.svg') no-repeat center center;
+}
+.--next-btn {
+  background: url('/src/assets/icon/mentor-slider_next-btn.svg') no-repeat center center;
 }
 /* End Cooperation > section2 > mentor slider */
 /* End Cooperation > section2 */
 /* End Cooperation Desktop size */
 
-.--previous-btn {
-  background: url('/src/assets/icon/mentor-slider_prev-btn.svg') no-repeat center center;
-}
-
-.--next-btn {
-  background: url('/src/assets/icon/mentor-slider_next-btn.svg') no-repeat center center;
-}
-
+/* Start Cooperation Mobile size */
 @media screen and (max-width: 768px) {
   .ms-music__info-wrapper {
     display: block;
@@ -218,3 +241,4 @@
     margin: -20px auto 0;
   }
 }
+/* End Cooperation Mobile size */
