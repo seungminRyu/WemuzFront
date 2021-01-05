@@ -32,7 +32,7 @@
   right: -30px;
   width: 422px;
   height: 391px;
-  background: url('/src/assets/img/mukathon_point-obj_1.svg') no-repeat center center;
+  background: url('../../assets/img/mukathon_point-obj_1.svg') no-repeat center center;
 }
 
 .point-obj2 {
@@ -41,7 +41,7 @@
   left: -70px;
   width: 241px;
   height: 216px;
-  background: url('/src/assets/img/mukathon_point-obj_2.svg') no-repeat center center;
+  background: url('../../assets/img/mukathon_point-obj_2.svg') no-repeat center center;
 }
 
 /* Start Cooperation > section1 */
@@ -205,10 +205,10 @@
 }
 
 .--previous-btn {
-  background: url('/src/assets/icon/mentor-slider_prev-btn.svg') no-repeat center center;
+  background: url('../../assets/icon/mentor-slider_prev-btn.svg') no-repeat center center;
 }
 .--next-btn {
-  background: url('/src/assets/icon/mentor-slider_next-btn.svg') no-repeat center center;
+  background: url('../../assets/icon/mentor-slider_next-btn.svg') no-repeat center center;
 }
 /* End Cooperation > section2 > mentor slider */
 /* End Cooperation > section2 */

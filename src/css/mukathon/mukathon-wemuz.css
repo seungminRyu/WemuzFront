@@ -17,7 +17,7 @@
   left: -12px;
   width: 824px;
   height: 150px;
-  background: url('/src/assets/img/withWemuz_why_us.png') no-repeat center center;
+  background: url('../../assets/img/withWemuz_why_us.png') no-repeat center center;
   background-size: cover;
   z-index: -1;
 }
@@ -40,7 +40,7 @@
   line-height: 32px;
   color: #fff;
   border-radius: 8px;
-  background: url('/src/assets/img/withWemuz_bg.png') no-repeat center center;
+  background: url('../../assets/img/withWemuz_bg.png') no-repeat center center;
   background-size: cover;
   padding: 334px 64px 40px 0;
   margin-top: 28px;
@@ -98,11 +98,11 @@
 }
 
 .staffs__staff:nth-child(1) .staff-photo {
-  background: url('/src/assets/img/withWemuz_minchan.png') no-repeat center center;
+  background: url('../../assets/img/withWemuz_minchan.png') no-repeat center center;
   background-size: cover;
 }
 .staffs__staff:nth-child(2) .staff-photo {
-  background: url('/src/assets/img/withWemuz_jinuk.png') no-repeat center center;
+  background: url('../../assets/img/withWemuz_jinuk.png') no-repeat center center;
   background-size: cover;
 }
 

@@ -63,7 +63,7 @@
   content: '';
   height: 538px;
   width: 20px;
-  background: url('src/assets/img/mukathon_schedule-obj.svg') no-repeat center center;
+  background: url('../../assets/img/mukathon_schedule-obj.svg') no-repeat center center;
 }
 
 .week-plan__plan-list {
