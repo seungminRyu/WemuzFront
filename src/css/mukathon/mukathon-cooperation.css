@@ -216,29 +216,166 @@
 
 /* Start Cooperation Mobile size */
 @media screen and (max-width: 768px) {
-  .ms-music__info-wrapper {
+  .--mobile {
     display: block;
+  }
+
+  .--desktop {
+    display: none;
+  }
+
+  /* Start Cooperation > section1 */
+  .Cooperation__section-1 {
+    padding: 60px 28px 36px;
+  }
+
+  .Cooperation__ms-music {
     width: 100%;
+    width: auto;
+  }
+
+  .Cooperation__ms-music h2 {
+    font-size: 20px;
+  }
+
+  .ms-music__info-wrapper {
+    position: relative;
+    display: block;
+    margin: 0;
   }
 
   .ms-music__photo {
-    width: 300px;
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    width: 100%;
+    height: 171px;
   }
 
-  .Cooperation__mentor-wrapper {
+  .ms-music__info {
+    padding: 0;
+    color: var(--wemuz-dark-gray);
+    margin-top: 16px;
+  }
+
+  .ms-music__logo {
+    width: 97px;
+    height: 44px;
+  }
+
+  .ms-music__info span {
+    font-weight: 500;
+    color: var(--wemuz-black);
+    background: none;
+    padding: 0;
+    margin-top: 200px;
+  }
+
+  .ms-music__info span::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: #dddddd;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  .ms-music__info p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    margin: 16px 0;
+  }
+  /* End Cooperation > section1 */
+
+  /* Start Cooperation > section2 */
+  .Cooperation__section-2 {
+    padding-bottom: 44px;
+  }
+
+  .mentor-overlay,
+  .mentor-slider__button-wrapper {
+    display: none;
+  }
+
+  .Cooperation__header h3 {
+    font-size: 14px;
+    color: #fff;
+    margin: 24px 28px;
+  }
+
+  .Cooperation__header h3::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border-radius: 0;
+    z-index: -1;
+  }
+
+  /* Start Cooperation > section2 > mentor slider */
+  .Cooperation__mentor-slider {
+    transform: translateX(28px);
+    margin-top: 14px;
+  }
+
+  .mentor-slider__slide {
     display: block;
     margin-right: 12px;
   }
 
   .mentor-photo {
+    position: relative;
+    display: block;
     width: 282px;
+    height: 282px;
+    z-index: -1;
   }
 
   .mentor-info {
-    width: 262px;
-    background-color: #fff;
+    position: relative;
+    width: 266px;
+    background: #fff;
     padding: 16px 12px;
-    margin: -20px auto 0;
+    margin: -40px auto 0;
   }
+
+  .mentor-info p {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: var(--wemuz-dark-gray);
+    margin-top: 14px;
+  }
+
+  .mentor-name {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .mentor-name h4 {
+    font-size: 16px;
+    color: var(--wemuz-purple);
+    margin-right: 7px;
+  }
+
+  .mentor-name h5 {
+    font-size: 12px;
+    color: var(--wemuz-gray);
+    margin: 0;
+  }
+
+  .Cooperation__mentor .slider-pagenation {
+    margin-top: 16px;
+  }
+
+  .Cooperation__mentor .slider-page {
+    width: calc(100% / 6);
+  }
+  /* End Cooperation > section2 > mentor slider */
+  /* End Cooperation > section2 */
 }
 /* End Cooperation Mobile size */

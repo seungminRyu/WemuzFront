@@ -153,6 +153,10 @@
 .Schedule__planDetail:nth-child(3) .planDetail__text {
   background-color: var(--wemuz-deep-purple);
 }
+
+.slider-pagenation {
+  display: none;
+}
 /* End Schedule > section2 > plan detail */
 /* End Schedule > section2 */
 /* End Schedule Desktop size */

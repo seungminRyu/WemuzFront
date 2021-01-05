@@ -140,7 +140,7 @@
   /* Start Intro > section1 > top header */
   .Intro__header {
     width: 100%;
-    background-image: url('../../src/assets/img/intro_top-bg--m.png');
+    background-image: url('../../assets/img/intro_top-bg--m.png');
     padding: 108px 0 49px;
   }
 
@@ -199,7 +199,7 @@
   /* Start Intro > section2 */
   .Intro__benefit-header {
     font-size: 20px;
-    background: url('../../src/assets/img/intro_benefit_header--m.png');
+    background: url('../../assets/img/intro_benefit_header--m.png');
     background-size: cover;
     padding: 43px 43px;
   }
