@@ -4,15 +4,22 @@
 설명: 뮤커톤 페이지 - 뮤커톤 소개, 뮤커톤만의 혜택
 *********************/
 
-/* Intro Desktop size */
-/* Start Intro */
+/* Start Intro Desktop size */
+.--mobile {
+  display: none;
+}
+
+.--desktop {
+  display: block;
+}
+
 /* Start Intro > section1 > top header */
 .Intro__header {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  background: url('/src/assets/img/mukathon_top-bg.png') no-repeat center center;
+  background: url('src/assets/img/mukathon_top-bg.png') no-repeat center center;
   background-size: cover;
   padding: 164px 111px;
 }
@@ -80,7 +87,7 @@
   font-size: 32px;
   font-weight: 500;
   color: var(--wemuz-white-gray);
-  background: url('/src/assets/img/mukathon_benefits-bg.png') no-repeat center center;
+  background: url('src/assets/img/mukathon_benefits-bg.png') no-repeat center center;
   background-size: cover;
   padding: 123px 0; /* For Desktop */
   margin: 0 auto;
@@ -121,14 +128,19 @@
 
 /* Start Intro Mobile size */
 @media screen and (max-width: 768px) {
-  .br-desktop {
+  .--mobile {
+    display: block;
+  }
+
+  .--desktop {
     display: none;
   }
 
+  /* Start Intro > section1 */
   /* Start Intro > section1 > top header */
   .Intro__header {
     width: 100%;
-    background-image: url('/src/assets/img/intro_top-bg--m.png');
+    background-image: url('src/assets/img/intro_top-bg--m.png');
     padding: 108px 0 49px;
   }
 
@@ -187,18 +199,19 @@
   /* Start Intro > section2 */
   .Intro__benefit-header {
     font-size: 20px;
-    background: url('/src/assets/img/intro_benefit_header--m.png');
+    background: url('src/assets/img/intro_benefit_header--m.png');
     background-size: cover;
     padding: 43px 43px;
   }
 
   .Intro__benefit-wrapper {
     display: block;
+    box-sizing: border-box;
     padding: 0 28px 72px 28px;
   }
 
   .Intro__benefit {
-    margin: 44px 0 0;
+    margin: 44px auto 0;
   }
 
   .Intro__benefit span {
