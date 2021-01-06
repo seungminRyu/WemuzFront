@@ -278,6 +278,7 @@
     height: 15px;
     border-radius: 8px;
     background-color: #dddddd;
+    padding-bottom: 4px;
     margin-right: 6px;
     vertical-align: middle;
   }

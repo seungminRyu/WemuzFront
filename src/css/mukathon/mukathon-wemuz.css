@@ -173,6 +173,24 @@
 
 /* Start Wemuz Mobile size */
 @media screen and (max-width: 768px) {
+  .--mobile {
+    display: block;
+  }
+
+  .--desktop,
+  .Wemuz__bg-whyUs {
+    display: none;
+  }
+
+  /* Start Wemuz > section1 */
+  .Wemuz__section-1 {
+    padding: 0;
+  }
+
+  .Wemuz__withWemuz {
+    text-align: start;
+  }
+
   .withWemuz__image {
     display: block;
     width: 100%;
@@ -180,21 +198,135 @@
     object-fit: cover;
   }
 
-  .Wemuz__withWemuz {
-    text-align: start;
+  .Wemuz__withWemuz h2 {
+    font-size: 20px;
+    padding-left: 28px;
+    margin-top: 26px;
   }
 
-  .Wemuz__withWemuz div {
-    padding: 0;
+  .Wemuz__description {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.28px;
+    color: var(--wemuz-dark-gray);
+    background: none;
+    padding: 0 28px;
     margin-top: 18px;
   }
+  /* End Wemuz > section1 */
 
-  .staffs-nav {
-    display: inline;
+  /* Start Wemuz > section2 */
+  .Wemuz__section-2 {
+    padding: 32px 28px 0;
   }
 
   .Wemuz__staffs {
     display: block;
+  }
+
+  .Wemuz__staffs-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f2ff;
+    border-radius: 4px;
+    padding: 12px 14px;
+  }
+
+  .Wemuz__staffs-nav h3 {
+    font-size: 14px;
+  }
+
+  .Wemuz__staffs-nav h3::before {
+    display: none;
+  }
+
+  .staffs-nav {
+    display: inline;
+    font-size: 12px;
+    color: #785ffa99;
+  }
+
+  .staffs-nav span {
+    margin-left: 12px;
+  }
+
+  .staffs-nav span.--active-name {
+    color: var(--wemuz-purple);
+    border-bottom: 1px solid var(--wemuz-purple);
+    padding-bottom: 2px;
+  }
+
+  .Wemuz__staffs-wrapper {
+    margin-top: 12px;
+  }
+
+  .staffs__staff {
+    position: relative;
+    display: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .--active-staff {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .staff-photo {
+    width: 120px;
+    height: 120px;
+    margin-right: 26px;
+  }
+
+  .staff-name {
+    font-size: 14px;
+    color: var(--wemuz-purple);
+    margin-top: 20px;
+  }
+
+  .staff-info {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    opacity: 100%;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--wemuz-dark-gray);
+    background: none;
+    padding: 0;
+    margin-top: 14px;
+  }
+  /* End Wemuz > section2 */
+
+  /* Start Wemuz > section3 */
+  .Wemuz__section-3 {
+    padding-top: 60px;
+  }
+
+  .Wemuz__sponsors h2 {
+    font-size: 20px;
+  }
+
+  .Wemuz__sponsor-wrapper {
+    padding: 32px 0 32px;
+    background: none;
+  }
+
+  .Wemuz__sponsor-list {
+    justify-content: space-around;
+  }
+
+  .sponsors__sponsor img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .sponsors__sponsor p {
+    display: none;
   }
 }
 /* End Wemuz Mobile size */
