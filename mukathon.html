@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뮤커톤 | 세상에 없던 나의 첫 음악</title>
     <link rel="stylesheet" href="src/css/mukathon/mukathon.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <script type="module" src="src/js/mukathon.js" defer></script>
 </head>
 <body>
@@ -146,52 +145,56 @@
             <!-- Start Schedule__section-2 -->
             <section class="Schedule__section-2">
                 <div class="Schedule__planDetail-wrapper">
-                    <!-- Start Schedule__planDetail-slider -->
-                    <div class="Schedule__planDetail-slider">
-                        <div class="Schedule__planDetail">
-                            <img src="src/assets/img/img_mentoring.png" alt="">
-                            <div class="planDetail__text">
-                                <h3>파트별/팀별 멘토링</h3>
-                                <p>
-                                    파트별 멘토링 4회, 팀별 멘토링 2회 총 6회의<span class="br --desktop"></span>
-                                    멘토링을 진행하게 됩니다. 음악 전문학원의<span class="br --desktop"></span>
-                                    멘토 선생님으로부터 전문적인 멘토링을 받으며<span class="br --desktop"></span>
-                                    음악적인 역량을 기를 수 있습니다.
-                                </p>
+                    <!-- Start Schedule__swiper-container -->
+                    <div class="Schedule__swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="Schedule__planDetail">
+                                    <img src="src/assets/img/img_mentoring.png" alt="">
+                                    <div class="planDetail__text">
+                                        <h3>파트별/팀별 멘토링</h3>
+                                        <p>
+                                            파트별 멘토링 4회, 팀별 멘토링 2회 총 6회의<span class="br --desktop"></span>
+                                            멘토링을 진행하게 됩니다. 음악 전문학원의<span class="br --desktop"></span>
+                                            멘토 선생님으로부터 전문적인 멘토링을 받으며<span class="br --desktop"></span>
+                                            음악적인 역량을 기를 수 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="Schedule__planDetail">
+                                    <img src="src/assets/img//img_busking.png" alt="">
+                                    <div class="planDetail__text">
+                                        <h3>버스킹, 뮤직 mt</h3>
+                                        <p>
+                                            팀 구성이 끝난 뒤 최종 공연 연습 곡을 버스킹을<span class="br --desktop"></span>
+                                            통해 처음으로 관객 앞에서 공연하게 됩니다.<span class="br --desktop"></span>
+                                            뮤직 mt는 유명 버스킹 스팟에서 버스킹을<span class="br --desktop"></span>
+                                            진행하고, 레크레이션과 함께 맛있는 식사를 통해<span class="br --desktop"></span>
+                                            참가자 간의 유대를 쌓을 수 있는<span class="br --desktop"></span>
+                                            레크레이션 활동입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="Schedule__planDetail">
+                                    <img src="src/assets/img/img_consert.png" alt="">
+                                    <div class="planDetail__text">
+                                        <h3>음원 녹음 및 최종 공연</h3>
+                                        <p>
+                                            최종 공연에서 팀별로 연습한 곡을 공연하게<span class="br --desktop"></span>
+                                            됩니다.<span class="br --desktop"></span>
+                                            최종 공연을 촬영한 영상과 연습곡 녹음을<span class="br --desktop"></span>
+                                            편집하여 앨범이 제작됩니다.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="Schedule__planDetail">
-                            <img src="src/assets/img//img_busking.png" alt="">
-                            <div class="planDetail__text">
-                                <h3>버스킹, 뮤직 mt</h3>
-                                <p>
-                                    팀 구성이 끝난 뒤 최종 공연 연습 곡을 버스킹을<span class="br --desktop"></span>
-                                    통해 처음으로 관객 앞에서 공연하게 됩니다.<span class="br --desktop"></span>
-                                    뮤직 mt는 유명 버스킹 스팟에서 버스킹을<span class="br --desktop"></span>
-                                    진행하고, 레크레이션과 함께 맛있는 식사를 통해<span class="br --desktop"></span>
-                                    참가자 간의 유대를 쌓을 수 있는<span class="br --desktop"></span>
-                                    레크레이션 활동입니다.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="Schedule__planDetail">
-                            <img src="src/assets/img/img_consert.png" alt="">
-                            <div class="planDetail__text">
-                                <h3>음원 녹음 및 최종 공연</h3>
-                                <p>
-                                    최종 공연에서 팀별로 연습한 곡을 공연하게<span class="br --desktop"></span>
-                                    됩니다.<span class="br --desktop"></span>
-                                    최종 공연을 촬영한 영상과 연습곡 녹음을<span class="br --desktop"></span>
-                                    편집하여 앨범이 제작됩니다.
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- End Schedule__planDetail-slider -->
-                    <div class="slider-pagenation">
-                        <div class="slider-page"></div>
-                        <div class="slider-page --active-page"></div>
-                        <div class="slider-page"></div>
-                    </div>
+                    </div> <!-- End Schedule__swiper-container -->
+                    <div class="Schedule__swiper-pagination"></div>
                 </div>
             </section><!-- End Schedule__section-2 -->
         </article><!-- End Schedule -->
@@ -231,7 +234,7 @@
                     <div class="Cooperation__header">
                         <h3>강사 멘토님 소개</h3>
                     </div>
-                    <!-- Start Cooperation__mentor-slider -->
+                    <!-- Start Cooperation__mentor-swiper -->
                     <div class="Cooperation__swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -323,19 +326,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> <!-- End Cooperation__mentor-swiper -->
                     <div class="mentor-slider__button-wrapper">
-                        <button class="slider-btn --previous-btn"></button>
-                        <button class="slider-btn --next-btn"></button>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                    <div class="slider-pagenation">
-                        <div class="slider-page --active-page"></div>
-                        <div class="slider-page"></div>
-                        <div class="slider-page"></div>
-                        <div class="slider-page"></div>
-                        <div class="slider-page"></div>
-                        <div class="slider-page"></div>
-                    </div>
+                    <div class="Cooperation__swiper-pagination"></div>
                 </div><!-- End Cooperation__mentor -->
             </section><!-- End Cooperation__section-2 -->
         </article><!-- End Cooperation -->
@@ -406,7 +402,7 @@
                 <div class="Wemuz__sponsors">
                     <h2>뮤커톤 후원 업체</h2>
                     <div class="Wemuz__sponsor-wrapper">
-                        <div class="Wemuz__sponsor-list">
+                        <div class="Wemuz__sponsor-row">
                             <div class="sponsors__sponsor">
                                 <img src="src/assets/img/sponsor_logo1.png" alt="" class="sponsor-logo">
                                 <p>민락인디트레이닝센터</p>
@@ -419,6 +415,8 @@
                                 <img src="src/assets/img/sponsor_logo3.png" alt="" class="sponsor-logo">
                                 <p>부두사운드 엔터테인먼트</p>
                             </div>
+                        </div>
+                        <div class="Wemuz__sponsor-row">
                             <div class="sponsors__sponsor">
                                 <img src="src/assets/img/sponsor_logo4.png" alt="" class="sponsor-logo">
                                 <p>부산대 기계공학부</p>

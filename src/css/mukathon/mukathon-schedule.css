@@ -116,9 +116,19 @@
   margin-top: -281px;
 }
 
-.Schedule__planDetail-slider {
+.Schedule__swiper-container {
   width: fit-content;
   margin: 118px auto;
+}
+
+.Schedule__swiper-container .swiper-slide {
+  width: 334px;
+  margin-right: 10px;
+}
+
+.Schedule__swiper-container .swiper-wrapper {
+  width: auto;
+  height: auto;
 }
 
 .Schedule__planDetail {
@@ -144,13 +154,13 @@
   margin-top: 26px;
 }
 
-.Schedule__planDetail:nth-child(1) .planDetail__text {
+.swiper-slide:nth-child(1) .planDetail__text {
   background-color: var(--wemuz-light-purple);
 }
-.Schedule__planDetail:nth-child(2) .planDetail__text {
+.swiper-slide:nth-child(2) .planDetail__text {
   background-color: var(--wemuz-purple);
 }
-.Schedule__planDetail:nth-child(3) .planDetail__text {
+.swiper-slide:nth-child(3) .planDetail__text {
   background-color: var(--wemuz-deep-purple);
 }
 
@@ -241,15 +251,24 @@
   }
 
   /* Start Schedule > section2 > plan detail slider */
-  .Schedule__planDetail-slider {
-    display: flex;
-    transform: translateX(calc(-100vw + 56px + 16px));
-    margin: 0;
+  .Schedule__swiper-container {
+    width: calc(100vw - 56px);
+    margin: 0 auto;
+  }
+
+  .Schedule__swiper-container .swiper-slide {
+    width: 100%;
   }
 
   .Schedule__planDetail {
-    width: calc(100vw - 56px);
-    margin-right: 12px;
+    width: 100%;
+    opacity: 0.5;
+    margin: 0;
+    transition: 0.2s;
+  }
+
+  .swiper-slide-active .Schedule__planDetail {
+    opacity: 1;
   }
 
   .Schedule__planDetail img {
@@ -277,21 +296,25 @@
     margin-top: 12px;
   }
 
-  .slider-pagenation {
+  .Schedule__swiper-pagination {
+    position: relative;
     display: flex;
     width: calc(100vw - 56px);
     height: 6px;
-    background-color: #785ffa66;
-    margin: 12px auto;
+    margin: 24px auto 0;
   }
 
-  .slider-page {
+  .Schedule__swiper-pagination .swiper-pagination-bullet {
     width: calc(100% / 3);
     height: 6px;
+    border-radius: 0;
+    background-color: #785ffa;
+    outline: none;
+    opacity: 0.4;
   }
 
-  .--active-page {
-    background-color: #785ffa;
+  .Schedule__swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
   }
   /* End Schedule > section2 > plan detail slider */
   /* End Schedule > section2 */

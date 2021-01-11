@@ -3,6 +3,8 @@
 작성자: 유승민
 설명: 위뮤즈 기본 style
 *********************/
+@import './variable.css';
+@import './reset.css';
 
 /* 나눔스퀘어라운드 - Regular(nomal) */
 @font-face {

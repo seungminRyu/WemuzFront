@@ -3,9 +3,10 @@
 작성자: 유승민
 설명: 뮤커톤 페이지 메인 css
 *********************/
-@import '../reset.css';
 @import '../style.css';
-@import '../variable.css';
+
+/* swiper js css */
+@import '../swiper.css';
 
 /* 섹션 별 import */
 @import './mukathon-intro.css';
