@@ -41,6 +41,7 @@ function setMobileSwiper() {
     var mentorSwiper = new Swiper('.Cooperation__swiper-container', {
         cssWidthAndHeight: true,
         slidesPerView: 1,
+        spaceBetween: 12,
         loop: true,
         pagination: {
             el: '.Cooperation__swiper-pagination',
