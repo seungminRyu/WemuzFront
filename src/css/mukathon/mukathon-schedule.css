@@ -27,6 +27,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .bg-object {
@@ -201,7 +202,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 26px;
+    margin-top: 20px;
   }
 
   .week-plan__plan-list::before {
@@ -213,7 +214,9 @@
     display: flex;
     justify-content: space-between;
     width: 274px;
-    padding: 17px 14px;
+    line-height: 46px;
+    padding: 0 16px 0 20px;
+    margin-top: 16px;
   }
 
   .week-plan__plan span:nth-child(1) {
@@ -226,7 +229,7 @@
 
   .week-plan__plan::before {
     position: absolute;
-    top: 18px;
+    top: 16px;
     left: -7px;
     content: '';
     width: 14px;

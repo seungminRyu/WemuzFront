@@ -219,7 +219,6 @@
   right: 0;
   width: 100px;
   height: 100px;
-  opacity: 0.65;
   outline: none;
   transition: 0.2s;
   background-color: blue;
@@ -228,22 +227,32 @@
 /* From swiper js */
 .swiper-button-next::after,
 .swiper-button-prev::after {
+  position: absolute;
+  top: 0;
+  left: 0;
   content: '';
   width: 100px;
   height: 100px;
   cursor: pointer;
+  background-color: var(--wemuz-purple);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
 }
 
 .swiper-button-prev::after {
-  background: url('../../assets/icon/mentor-slider_prev-btn.svg') no-repeat center center;
+  background-image: url('../../assets/icon/cooperation__prevBtn.png');
 }
 .swiper-button-next::after {
-  background: url('../../assets/icon/mentor-slider_next-btn.svg') no-repeat center center;
+  background-image: url('../../assets/icon/cooperation__nextBtn.png');
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  opacity: 1;
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  background-color: #a58eff;
 }
 
 /* End Cooperation > section2 > mentor slider */
