@@ -107,8 +107,8 @@ function setStaffMenu() {
 function init() {
     const mediaQuery = window.matchMedia('(max-width: 768px)');
 
-    //setScheduleSwiper(mediaQuery);
-    //setMentorSlider(mediaQuery);
+    setScheduleSwiper(mediaQuery);
+    setMentorSlider(mediaQuery);
     setStaffMenu();
 }
 
