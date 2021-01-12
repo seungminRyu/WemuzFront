@@ -42,6 +42,7 @@ function setMobileSwiper() {
         cssWidthAndHeight: true,
         slidesPerView: 1,
         spaceBetween: 12,
+        loopedSlides: 6,    // 슬라이드 갯수와 같아야 함
         loop: true,
         pagination: {
             el: '.Cooperation__swiper-pagination',
@@ -55,6 +56,7 @@ function setDesktopSlider() {
         cssWidthAndHeight: true,
         slidesPerView: 1,
         spaceBetween: 120,
+        loopedSlides: 6,    // 슬라이드 갯수와 같아야 함
         loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -69,6 +71,7 @@ function setScheduleSwiper(mediaQuery) {
             cssWidthAndHeight: true,
             slidesPerView: 1,
             spaceBetween: 12,
+            loopedSlides: 3, // 슬라이드 갯수와 같아야 함
             loop: true,
             pagination: {
                 el: '.Schedule__swiper-pagination',
