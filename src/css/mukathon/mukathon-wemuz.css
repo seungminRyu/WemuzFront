@@ -164,6 +164,10 @@
   margin: 0 auto;
 }
 
+.sponsor-logo--mobile {
+  display: none;
+}
+
 .sponsors__sponsor p {
   margin-top: 24px;
   text-align: center;
@@ -355,10 +359,12 @@
     justify-content: center;
   }
 
-  .sponsors__sponsor img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
+  .sponsor-logo--mobile {
+    display: block;
+  }
+
+  .sponsor-logo {
+    display: none;
   }
 
   .sponsors__sponsor p {
