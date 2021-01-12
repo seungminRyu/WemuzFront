@@ -314,7 +314,7 @@
     height: 185px;
     text-align: center;
     box-sizing: border-box;
-    background: url('/src/assets/img/sponsor__bg.png') no-repeat center center;
+    background: url('../../assets/img/sponsor__bg.png') no-repeat center center;
     background-size: cover;
     padding-top: 68px;
   }
