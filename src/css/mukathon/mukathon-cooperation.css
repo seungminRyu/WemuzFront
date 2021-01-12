@@ -340,7 +340,7 @@
     width: 100%;
     background-color: var(--wemuz-purple);
     padding: 24px 28px 60px;
-    margin-bottom: -14px;
+    margin-bottom: -46px;
   }
 
   .Cooperation__header h3 {
@@ -355,7 +355,7 @@
   /* Start Cooperation > section2 > mentor slider */
   .Cooperation__swiper-container {
     width: 282px;
-    height: 600px;
+    height: auto;
     margin: 0 auto;
   }
 
