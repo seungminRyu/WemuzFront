@@ -1,3 +1,13 @@
+const checkIsExist = async function(nick) {
+    const res = await fetch(`https://wemuz.me/api/v1/musicians/alias/?alias=${nick}`, {
+        method: 'GET',
+    })
+
+    return res.json();
+    
+}
+
+
 // 한글인지 확인
 function checkIsKor(char) {
     if (escape(nick).length > 4) {
@@ -25,7 +35,7 @@ function checkKorValid(nickname) {
     return true;
 }
 
-function checkNickNameValid(nickname) {
+async function checkNickValid(nickname) {
     var nickLength = 0;
     var engCheck = /[a-z]/;
     var numCheck = /[0-9]/;
@@ -37,6 +47,7 @@ function checkNickNameValid(nickname) {
     const INVALID_LONG = "활동명이 너무 깁니다. (10자 이내)";
     const INVALID_SYMBOL = "활동명에 특수문자를 포함시킬 수 없습니다.";
     const INVALID_KOR = "올바르지 않은 형식입니다.";
+    const INVALID_EXIST = "이미 존재하는 활동명 입니다.";
     const VALID = "사용할 수 있는 활동명 입니다 :)";
 
     // 한글, 영문 길이 2, 1로 바꾸기
@@ -77,7 +88,15 @@ function checkNickNameValid(nickname) {
 
     // 닉네임 중복검사
     } else {
-        return VALID
+        const isExist = await checkIsExist(nickname);
+        console.log(isExist)
+        const { code } = isExist;
+        
+        if (code === "OK") {
+            return VALID
+        } else {
+            return INVALID_EXIST;
+        }
     }
 }
 
@@ -87,7 +106,7 @@ function init() {
 
     $nick.addEventListener("keyup", async (e) => {
         const { value } = e.target
-        $check.textContent = checkNickNameValid(value);
+        $check.textContent = await checkNickValid(value);
     });
 }
 

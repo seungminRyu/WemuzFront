@@ -1,0 +1,69 @@
+.signup-overlay {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.signup-container {
+  width: 1024px;
+  height: 630px;
+  border-radius: 28px;
+  background: #fff;
+}
+
+.signup__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 68px;
+}
+
+.signup__step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  color: #666666;
+  background: #e8e6f6;
+  border-radius: 18px;
+}
+
+.signup__btn-pre {
+  position: absolute;
+  left: 24px;
+}
+
+.signup__input-field {
+}
+
+.signup__nick {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .signup-container {
+    width: 100%;
+    height: 580px;
+    margin-top: calc(100vh - 580px);
+    border-radius: 0;
+    /* 임시 radius 사이즈 */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .signup__btn-next {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 58px;
+    border: none;
+    background-color: var(--wemuz-purple);
+    color: #fff;
+  }
+}

@@ -3,27 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/signup/signup-2.css">
     <script src="./src/js/signup/signup2.js" defer></script>
     <title>위뮤즈 | 회원가입</title>
 </head>
 <body>
-    <main class="signup-container">
-        <div class="signup__wrapper">
-            <div class="signup__nav">
-                <button class="signup__btn-pre">이전</button>
-                <span class="signup__step-num">2</span>
-            </div>
-            <div class="signup__input-field">
-                <h1>프로필 사진이 있으신가요?</h1>
-                <p>나를 잘 표현할 수 있는 이미지를 업로드해 주세요.</p>
-                <div class="signup__imagePreview">
-                    <img id="signup__img" src="./src/assets/img/image-1.png" alt="">
+    <div class="signup-overlay">
+        <div class="signup-container">
+            <div class="signup__wrapper">
+                <div class="signup__nav">
+                    <button class="signup__btn-pre">이전</button>
+                    <span class="signup__step-num">2</span>
                 </div>
-                <input type="file" class="image-input" accept="img/*" required multiple>
-                <button class="browse-btn">사진 업로드</button>
+                <div class="signup__input-field">
+                    <h1>프로필 사진이 있으신가요?</h1>
+                    <p>나를 잘 표현할 수 있는 이미지를 업로드해 주세요.</p>
+                    <div class="signup__imagePreview">
+                        <img id="signup__img" src="./src/assets/img/image-1.png" alt="">
+                    </div>
+                    <input type="file" class="image-input" accept="img/*" required multiple>
+                    <button class="browse-btn">사진 업로드</button>
+                </div>
+                <button class="signup__btn-next">다음 단계로</button>
             </div>
-            <button class="signup__btn-next">다음 단계로</button>
         </div>
-    </main>
+    </div>
 </body>
 </html>
