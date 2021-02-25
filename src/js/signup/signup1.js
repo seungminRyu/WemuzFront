@@ -1,10 +1,9 @@
-const checkIsExist = async function(nick) {
-    const res = await fetch(`https://wemuz.me/api/v1/musicians/alias/?alias=${nick}`, {
+async function checkIsExist(nickname) {
+    const res = await fetch(`https://wemuz.me/api/v1/musicians/alias/?alias=${nickname}`, {
         method: 'GET',
     })
 
-    return res.json();
-    
+    return res.json();   
 }
 
 

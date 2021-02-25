@@ -40,7 +40,7 @@ const renderResult = (data) => {
     $ul.innerHTML = "";
     let resultList = "";
     results.forEach(result => {
-        const li = `<li>${result.address_name}  x:${result.x}  y:${result.y}</li>`;
+        const li = `<li>${result.address_name}</li>`;
         resultList += li;
     });
     $ul.innerHTML = resultList;
