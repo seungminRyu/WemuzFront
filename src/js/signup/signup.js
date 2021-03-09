@@ -9,7 +9,8 @@ let sliderWidth = 1024;
 let curIndex = 0;
 let curSlide = $slides[curIndex];
 let isFilled = {
-    nick: false,
+    // nick: false,
+    nick: true,  // For dev
     photo: true, // fixed
     address: false,
     position: false,
