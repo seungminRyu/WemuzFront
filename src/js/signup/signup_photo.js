@@ -8,6 +8,7 @@ function readInputImg(e) {
 
     if (!inputFile.type.match("image/.*")) {
         alert('이미지 파일만 선택 가능합니다.');
+        e.target.value = '';
         return;
     }
 
