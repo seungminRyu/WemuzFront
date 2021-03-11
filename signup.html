@@ -11,10 +11,10 @@
 <body>
     <div class="signup-overlay">
         <div class="signup-container">
-            <!-- <form action="" method="post"> -->
+            <form action="./" method="post">
                 <div class="signup__wrapper">
                     <div class="signup__nav">
-                        <button class="signup__btn-pre">이전</button>
+                        <button type="button" class="signup__btn-pre">이전</button>
                         <span class="signup__step-num">1</span>
                     </div>
                     <div class="signup__slider-frame">
@@ -23,7 +23,7 @@
                                 <div class="signup__input-field">
                                     <h1>어떤 활동명으로 활동하시나요?</h1>
                                     <p>뮤지션으로의 첫걸음, 나의 활동명을 적어주세요. (10자 이내)</p>
-                                    <input class="signup__nick" type="text" placeholder="활동명을 입력해 주세요.">
+                                    <input class="signup__nick" type="text" name="nickname" placeholder="활동명을 입력해 주세요.">
                                     <span class="signup__check-nick"></span>
                                 </div>
                             </div>
@@ -34,20 +34,20 @@
                                     <div class="signup__imagePreview">
                                         <img class="signup__img" src="/static/img/users/icon/ico_google.svg" style="max-width: 200px;" alt="">
                                     </div>
-                                    <input type="file" class="image-input" accept="image/*">
-                                    <button class="signup__browse-btn">사진 업로드</button>
+                                    <input type="file" name="profile-img" class="image-input" accept="image/*">
+                                    <button type="button" class="signup__browse-btn">사진 업로드</button>
                                 </div>
                             </div>
                             <div class="signup__slide-wrapper">
                                 <div class="signup__input-field">
                                     <h1>어떤 지역에서 주로 활동하시나요?</h1>
                                     <p>지역 정보를 기반으로 근처에서 활동하는 아티스트들을 추천해드려요</p>
-                                    <input class="signup__searchInput" type="text" placeholder="주소를 검색해 주세요.">
-                                    <button class="signup__searchBtn">검색</button>
+                                    <input class="signup__searchInput" name="address" type="text" placeholder="주소를 검색해 주세요.">
+                                    <button type="button" class="signup__searchBtn">검색</button>
                                     <div class="result">
                                         <ul class="result-list"></ul>
-                                        <button class="result__btn-pre">이전</button>
-                                        <button class="result__btn-next">다음</button>
+                                        <button type="button" class="result__btn-pre">이전</button>
+                                        <button type="button" class="result__btn-next">다음</button>
                                     </div>
                                 </div>
                             </div>
@@ -57,35 +57,35 @@
                                     <p>선호하는 포지션 1개를 선택해 주세요. 선택된 포지션은 매칭 서비스에 활용되요.</p>
                                     <div class="signup__position-field">
                                         <span class="signup__position">
-                                            <input type="radio" onclick="onPosition()" name="position" id="artist1">
+                                            <input type="radio" onclick="onPosition()" name="position" id="artist1" value="vocal">
                                             <label for="artist1">보컬</label>
                                         </span>
                                         <span class="signup__position">
-                                            <input type="radio" onclick="onPosition()" name="position" id="artist2">
+                                            <input type="radio" onclick="onPosition()" name="position" id="artist2" value="elec">
                                             <label for="artist2">일렉 기타</label>
                                         </span>
                                         <span class="signup__position">
-                                            <input type="radio" onclick="onPosition()" name="position" id="artist3">
+                                            <input type="radio" onclick="onPosition()" name="position" id="artist3" value="acustic">
                                             <label for="artist3">어쿠스틱 기타</label>
                                         </span>
                                         <span class="signup__position">
-                                            <input type="radio" onclick="onPosition()" name="position" id="artist4">
+                                            <input type="radio" onclick="onPosition()" name="position" id="artist4" value="base">
                                             <label for="artist4">베이스</label>
                                         </span>
                                         <span class="signup__position">
-                                            <input type="radio" onclick="onPosition()" name="position" id="artist5">
+                                            <input type="radio" onclick="onPosition()" name="position" id="artist5" value="keyboard">
                                             <label for="artist5">키보드</label>
                                         </span>
                                         <span class="signup__position">
-                                            <input type="radio" onclick="onPosition()" name="position" id="artist6">
+                                            <input type="radio" onclick="onPosition()" name="position" id="artist6" value="compose">
                                             <label for="artist6">작사/작곡</label>
                                         </span>
                                         <span class="signup__position">
-                                            <input type="radio" onclick="onPosition()" name="position" id="artist7">
+                                            <input type="radio" onclick="onPosition()" name="position" id="artist7" value="drum">
                                             <label for="artist7">드럼</label>
                                         </span>
                                         <span class="signup__position">
-                                            <input type="radio" onclick="onPosition()" name="position" id="artist8">
+                                            <input type="radio" onclick="onPosition()" name="position" id="artist8" value="dj">
                                             <label for="artist8">DJ/MIDI</label>
                                         </span>
                                     </div>
@@ -97,47 +97,47 @@
                                     <p>선택하신 장르를 기반으로 음악 성향이 비슷한 뮤지션들을 추천해드려요.</p>
                                     <div class="signup__genre-field">
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="ballad">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="ballad" value="ballad">
                                             <label for="ballad">발라드</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="hiphop">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="hiphop" value="hiphop">
                                             <label for="hiphop">힙합</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="pop">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="pop" value="pop">
                                             <label for="pop">팝</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="folk">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="folk" value="folk">
                                             <label for="folk">포크/어쿠스틕</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="electronic">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="electronic" value="electronic">
                                             <label for="electronic">일렉트로닉</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="rnb">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="rnb" value="rnb">
                                             <label for="rnb">알앤비</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="rock">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="rock" value="rock">
                                             <label for="rock">락</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="trot">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="trot" value="trot">
                                             <label for="trot">트로트</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="dance">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="dance" value="dance">
                                             <label for="dance">댄스</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="classic">
+                                            <input type="radio" onclick="onGenre()" name="genre" id="classic" value="classic">
                                             <label for="classic">클래식</label>
                                         </span>
                                         <span class="signup__genre">
-                                            <input type="radio" onclick="onGenre()" name="genre" id="blues">
+                                            <input type="radio" onclick="onGenre()" name="genre" value="blues">
                                             <label for="blues">블루스</label>
                                         </span>
                                     </div>
@@ -149,35 +149,35 @@
                                     <p>최대 3명의 아티스트를 선택해 주세요. 나와 음악적 공감대가 비슷한 사람들을 추천해드려요.</p>
                                     <div class="signup__artist-field">
                                         <span class="signup__artist">
-                                            <input type="checkbox" onclick="onArtist(event)" id="arst1">
+                                            <input type="checkbox" name="artist" onclick="onArtist(event)" id="arst1" value="art1">
                                             <label for="arst1">다이나믹 듀오</label>
                                         </span>
                                         <span class="signup__artist">
-                                            <input type="checkbox" onclick="onArtist(event)" id="elec-guitar">
+                                            <input type="checkbox" name="artist" onclick="onArtist(event)" id="elec-guitar" value="art2">
                                             <label for="elec-guitar">방탄소년단</label>
                                         </span>
                                         <span class="signup__artist">
-                                            <input type="checkbox" onclick="onArtist(event)" id="acustic-guitar">
+                                            <input type="checkbox" name="artist" onclick="onArtist(event)" id="acustic-guitar" value="art3">
                                             <label for="acustic-guitar">기리보이</label>
                                         </span>
                                         <span class="signup__artist">
-                                            <input type="checkbox" onclick="onArtist(event)" id="base">
+                                            <input type="checkbox" name="artist" onclick="onArtist(event)" id="base" value="art4">
                                             <label for="base">윤미래</label>
                                         </span>
                                         <span class="signup__artist">
-                                            <input type="checkbox" onclick="onArtist(event)" id="keyboard">
+                                            <input type="checkbox" name="artist" onclick="onArtist(event)" id="keyboard" value="art5">
                                             <label for="keyboard">MINO(송민호)</label>
                                         </span>
                                         <span class="signup__artist">
-                                            <input type="checkbox" onclick="onArtist(event)" id="compose">
+                                            <input type="checkbox" name="artist" onclick="onArtist(event)" id="compose" value="art6">
                                             <label for="compose">GRAY</label>
                                         </span>
                                         <span class="signup__artist">
-                                            <input type="checkbox" onclick="onArtist(event)" id="drum">
+                                            <input type="checkbox" name="artist" onclick="onArtist(event)" id="drum" value="art7">
                                             <label for="drum">우원재</label>
                                         </span>
                                         <span class="signup__artist">
-                                            <input type="checkbox" onclick="onArtist(event)" id="dj">
+                                            <input type="checkbox" name="artist" onclick="onArtist(event)" id="dj" value="art8">
                                             <label for="dj">더콰이엇</label>
                                         </span>
                                     </div>
@@ -186,10 +186,10 @@
                             </div>
                         </div>
                     </div>
-                    <button class="signup__btn-next">다음 단계로</button>
-                    <input type="submit" value="완료">
+                    <button type="button" class="signup__btn-next">다음 단계로</button>
+                    <button type="submit">완료</button>
                 </div>
-            <!-- </form> -->
+            </form>
         </div>
     </div>
 </body>
