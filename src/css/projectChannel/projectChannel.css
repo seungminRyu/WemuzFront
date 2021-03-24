@@ -1,0 +1,105 @@
+@import '../style.css';
+
+/* Start Desktop size Project GNB bar */
+.project__GNB {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 195, 195); /* For dev */
+}
+
+.project__GNB-wrapper {
+    display: flex;
+    width: 1360px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.project__GNB-logo {
+    width: 100px;   /* For dev */
+    height: 46px;   /* For dev */
+    background-color: rgb(194, 194, 255);  /* For dev */
+}
+
+.project__GNB-user-profile {
+    width: 44px;    /* For dev */
+    height: 44px;   /* For dev */
+    background-color: rgb(194, 194, 255);  /* For dev */
+}
+/* End Desktop size Project GNB bar */
+
+/* Start Desktop size Project channel */
+.channel-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(190, 255, 170);  /* For dev */
+}
+
+/* Start channel */
+.channel-wrapper {
+    display: flex;
+    width: 1360px;
+    margin: 100px auto 0;
+    background-color: rgb(179, 218, 255);  /* For dev */
+}
+
+/* Start channel > side bar */
+.side-bar {
+    width: 260px;
+    height: 800px;  /* For dev */
+    background-color: rgb(237, 179, 255);  /* For dev */
+    margin-right: 40px;
+}
+
+.side-bar__channel-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    height: 152px;
+    padding-top: 34px;
+    background-color: rgb(247, 255, 179);  /* For dev */
+}
+
+.side-bar__user-profile {
+    padding: 28px 20px;
+    margin-top: 4px;
+    background-color: rgb(247, 255, 179);  /* For dev */
+}
+
+.user-profile__header {
+    display: flex;
+}
+
+.side-bar__menu {
+    margin-top: 24px;
+    background-color: rgb(247, 255, 179);  /* For dev */
+}
+/* End channel > side bar */
+
+/* Start channel > content */
+.content {
+    width: 1060px;
+    height: 400px;  /* For dev */
+    background-color: rgb(237, 179, 255);  /* For dev */
+}
+
+.content-header {
+    width: 100%;
+    height: 68px;
+    background-color: rgb(247, 255, 179);  /* For dev */
+}
+
+.content-container {
+    width: 100%;
+    height: 400px; /* For dev */
+    background-color: rgb(247, 255, 179);  /* For dev */
+    margin-top: 16px;
+}
+/* End channel > content */
+/* End channel */
+/* End Desktop size Project channel */
