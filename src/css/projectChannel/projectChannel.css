@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     min-width: 100%;
-    background-color: rgb(255, 195, 195); /* For dev */
+    box-shadow: 0 2px 2px #1212121a;
 }
 
 .project-GNB-wrapper {
@@ -29,13 +29,13 @@
 .project-GNB__logo {
     width: 100px;   /* For dev */
     height: 46px;   /* For dev */
-    background-color: rgb(194, 194, 255);  /* For dev */
+    background-color: var(--dev-img);   /* For dev */
 }
 
 .project-GNB__user-profile {
     width: 44px;    /* For dev */
     height: 44px;   /* For dev */
-    background-color: rgb(194, 194, 255);  /* For dev */
+    background-color: var(--dev-img);   /* For dev */
 }
 /* End Project GNB bar */
 
@@ -73,34 +73,125 @@
 }
 
 .side-bar__channel-info {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 260px;
     height: 152px;
+    border-radius: 4px;
+    background-color: rgb(179, 255, 232);  /* For dev */
+    box-sizing: border-box;
+    z-index: 10;
     padding-top: 34px;
-    background-color: rgb(247, 255, 179);  /* For dev */
+}
+
+.side-bar__bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    z-index: -1;
+    background-color: #1212124b;
+}
+
+.side-bar__channel-info div {
+    text-align: center;
+}
+
+.channel-info__img {
+    width: 40px;
+    height: 40px;
+}
+
+.channel-info__title {
+    font-size: 22px;   
+    color: var(--wemuz-red);
+    margin-top: 10px;
+}
+
+.channel-info__season {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 3px;
 }
 
 .side-bar__user-profile {
-    padding: 28px 20px;
+    padding: 28px 20px 20px;
     margin-top: 4px;
-    background-color: rgb(247, 255, 179);  /* For dev */
+    border-radius: 4px;
+    background-color: #e8e8e8
 }
 
 .user-profile__header {
     display: flex;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
 }
 
 .user-profile__avatar {
     width: 60px;
     height: 60px;
-    background-color: rgb(175, 236, 247);
+    border-radius: 20px;
+    margin-right: 12px;
+    background-color: var(--dev-img);   /* For dev */
+}
+
+.user-profile__alias {
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.user-profile__team {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    background-color: #feadad;
+    border-radius: 4px;
+    padding: 4px 6px 3px;
+    margin-top: 6px;
+}
+
+.user-profile__info {
+    padding-top: 10px;
+}
+
+.user-profile__info li {
+    display: flex;
+    justify-content: space-between;
+    color: var(--wemuz-deep-gray);
+    margin-top: 6px;
 }
 
 .side-bar__menu {
+    padding: 0px 10px;
     margin-top: 24px;
-    background-color: rgb(247, 255, 179);  /* For dev */
+}
+
+.menu__item {
+    position: relative;
+    font-size: 18px;
+    color: var(--wemuz-deep-gray);
+    padding: 19px 0 18px 56px;
+}
+
+.menu__item.--activated {
+    border-radius: 8px;
+    color: #fff;
+    background-color: #feadad;
+}
+
+.menu__item::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--dev-img);   /* For dev */
 }
 /* End channel > side bar */
 
@@ -116,9 +207,27 @@
 }
 
 .content-header {
+    position: relative;
     width: 100%;
     height: 68px;
-    background-color: rgb(247, 255, 179);  /* For dev */
+    border-radius: 4px;
+    background-color: #ffe6e6;
+    box-sizing: border-box;
+    padding: 21px 58px 21px;
+}
+
+.content-header span {
+    font-size: 24px;
+}
+
+.content-header span::before {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    content: '';
+    width: 36px;
+    height: 36px;
+    background-color: var(--dev-img);   /* For dev */
 }
 
 .content-container {
@@ -169,6 +278,33 @@
         box-sizing: border-box;
         padding: 0 20px 0 16px;
     }
+
+    .project-GNB__menu-btn {
+        width: 28px;
+        height: 28px;
+        background-color: var(--dev-img); /* For dev */
+    }
+
+    .project-GNB__channel-title {
+        text-align: center;
+    }
+
+    .project-GNB__channel-title h1 {
+        font-size: 16px;
+        color: var(--wemuz-red);
+    }
+
+    .project-GNB__channel-title h2 {
+        font-size: 12px;
+        color: var(--wemuz-gray);
+        margin-top: 6px;
+    }
+
+    .project-GNB__user-profile {
+        width: 32px;
+        height: 32px;
+        border-radius: 11px;
+    }
     /* End Project GNB */ 
 
 
@@ -198,11 +334,13 @@
     }
 
     .side-bar__channel-info {
-        position: relative;
         width: 100%;
         height: 175px;
-        box-sizing: border-box;
-        box-shadow: 0 0 0 3px rgb(180, 255, 251) inset; /* For dev */
+        border-radius: 0;
+    }
+
+    .side-bar__bg-overlay {
+        border-radius: 0;
     }
 
     .side-bar__close-btn {
@@ -211,6 +349,8 @@
         left: 16px;
         width: 28px;
         height: 28px;
+        border: none;
+        background-color: var(--dev-img);    /* For dev */
     }
 
     .side-bar__channel-info img {
@@ -219,41 +359,90 @@
     }
 
     .side-bar__channel-info h1 {
+        font-size: 24px;
         margin-top: 16px;
     }
 
     .side-bar__channel-info h2 {
+        font-size: 15px;
         margin-top: 6px;
     }
 
     .side-bar__user-profile {
+        position: relative;
         margin-top: 0;
-        box-shadow: 0 0 0 3px rgb(180, 255, 251) inset; /* For dev */
+        border-radius: 0;
+    }
+
+    .side-bar__user-profile::after {
+        position: absolute;
+        top: 43px;
+        right: 12px;
+        content: '';
+        width: 32px;
+        height: 32px;
+        background-color: var(--dev-img); /* For dev */
+    }
+
+    .user-profile__header {
+        border-bottom: none;
     }
 
     .user-profile__avatar {
         width: 36px;
         height: 36px;
+        border-radius: 12px;
         margin-right: 12px;
     }
 
     .user-profile__user-wrapper {
         display: flex;
+        align-items: center;
     }
 
     .user-profile__alias {
+        font-size: 18px;
         margin-right: 6px;
     }
 
-    .side-bar__menu {
-        padding: 12px 0 12px;
-        margin-top: 0;
-        box-shadow: 0 0 0 3px rgb(180, 255, 251) inset; /* For dev */
+    .user-profile__team {
+        font-size: 12px;
+        border-radius: 4px;
+        padding: 3.5px 6px 2px;
     }
 
-    .side-bar__menu li {
+    .user-profile__info {
+        font-size: 15px;
+        color: var(--wemuz-deep-gray);
+    }
+
+    .side-bar__menu {
+        padding: 12px 0 12px 60px;
+        margin-top: 0;
+        border-top: 2px solid var(--wemuz-light-gray);
+        border-bottom: 2px solid var(--wemuz-light-gray);
+    }
+
+    .menu__item {
         height: 48px;
-        padding: 0 20px;
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 15px 20px 14px;
+    }
+    .menu__item:not(:last-child) {
+        border-bottom: 1px solid var(--wemuz-light-gray);
+    }
+
+    .menu__item.--activated {
+        color: var(--wemuz-red);
+        background: none;
+    }
+
+    .menu__item::before {
+        top: 8px;
+        left: -40px;
+        width: 32px;
+        height: 32px;
     }
     /* End channel > side-bar */
 
@@ -268,6 +457,19 @@
 
     .content-header {
         height: 52px;
+        border-radius: 0;
+        padding: 18px 38px;
+    }
+
+    .content-header span {
+        font-size: 16px;
+    }
+
+    .content-header span::before {
+        top: 16px;
+        left: 16px;
+        width: 20px;
+        height: 20px;
     }
 
     .content-container {

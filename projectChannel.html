@@ -10,23 +10,30 @@
     <body>
         <nav class="project-GNB">
             <div class="project-GNB-wrapper">
-                <div class="project-GNB__logo">logo</div>
-                <div class="project-GNB__menu-btn --m">메뉴</div>
+                <div class="project-GNB__logo">
+                    <a href="/">logo</a>
+                </div>
+                <div class="project-GNB__menu-btn --m">menu</div>
                 <div class="project-GNB__channel-title --m">
                     <h1>뮤커톤</h1>
                     <h2>부산 3기</h2>
                 </div>
-                <div class="project-GNB__user-profile">user profile</div>
+                <div class="project-GNB__user-profile">
+                    <a href="/"></a>
+                </div>
             </div>
         </nav>
         <main class="channel-container">
             <div class="channel-wrapper">
                 <aside class="side-bar">
                     <div class="side-bar__channel-info">
-                        <button class="side-bar__close-btn --m" type="button">x</button>
-                        <img src="./src/assets/img/favicon.ico" alt="">
-                        <h1>뮤커톤</h1>
-                        <h2>부산 3기</h2>
+                        <div class="side-bar__bg-overlay"></div>
+                        <button class="side-bar__close-btn --m" type="button">quit</button>
+                        <div>
+                            <img class="channel-info__img" src="./src/assets/img/favicon.ico" alt="뮤커톤 로고">
+                            <h1 class="channel-info__title" >뮤커톤</h1>
+                            <h2 class="channel-info__season" >부산 3기</h2>
+                        </div>
                     </div>
                     <div class="side-bar__user-profile">
                         <div class="user-profile__header">
@@ -34,33 +41,35 @@
                             <div class="user-profile__user">
                                 <div class="user-profile__user-wrapper">
                                     <h3 class="user-profile__alias">두실왕</h3>
-                                    <p class="user-profile__team">팀3</p>
+                                    <p class="user-profile__team">팀 3</p>
                                 </div>
                                 <span class="user-profile__info --m">보컬, 부산 금정구, 알앤비</span>
                             </div>
                         </div>
                         <div class="user-profile__info">
                             <ul>
-                                <li class="user-profile__position">포지션</li>
-                                <li class="user-profile__region">활동지역</li>
-                                <li class="user-profile__genre">장르</li>
+                                <li class="user-profile__position">포지션<span>보컬</span></li>
+                                <li class="user-profile__region">활동지역<span>부산 금정구</span></li>
+                                <li class="user-profile__genre">장르<span>알앤비</span></li>
                             </ul>
                         </div>
                     </div>
                     <div class="side-bar__menu">
                         <ul class="menu">
-                            <li>홈</li>
-                            <li>공지사항</li>
-                            <li>미션수행</li>
-                            <li>연습실 사용 일정</li>
-                            <li>참가자</li>
-                            <li>미션 게시판</li>
-                            <li>자유 게시판</li>
+                            <li class="menu__item --activated">홈</li>
+                            <li class="menu__item">공지사항</li>
+                            <li class="menu__item">미션수행</li>
+                            <li class="menu__item">연습실 사용 일정</li>
+                            <li class="menu__item">참가자</li>
+                            <li class="menu__item">미션 게시판</li>
+                            <li class="menu__item">자유 게시판</li>
                         </ul>
                     </div>
                 </aside>
                 <article class="content">
-                    <header class="content-header">홈</header>
+                    <header class="content-header">
+                        <span>홈</span>
+                    </header>
                     <div class="content-container">content</div>
                 </article>
             </div>

@@ -7,6 +7,8 @@
   --wemuz-white-gray: #eeeeee;
   --wemuz-light-gray: #cccccc;
   --wemuz-gray: #999999;
+  --wemuz-deep-gray: #666666;
   --wemuz-dark-gray: #555555;
   --wemuz-black: #333333;
+  --dev-img: rgb(175, 236, 247);  /* For dev */
 }
