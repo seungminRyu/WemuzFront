@@ -6,6 +6,7 @@
     width: 100%;
     box-shadow: 0 2px 2px hsla(0, 0%, 7%, 0.102);
     background-color: #fff;
+    z-index: 100;
 }
 
 .project-GNB-wrapper {
@@ -48,6 +49,11 @@
         width: 100%;
         height: 60px;
         box-sizing: border-box;
+    }
+
+    .project-GNB__logo {
+        width: 70px;
+        height: 42px;
     }
 
     .project-GNB__menu-btn {
