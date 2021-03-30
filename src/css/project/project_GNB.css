@@ -1,0 +1,80 @@
+/* Start Desktop size Project GNB bar */
+.project-GNB {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px hsla(0, 0%, 7%, 0.102);
+    background-color: #fff;
+}
+
+.project-GNB-wrapper {
+    display: flex;
+    max-width: 1400px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.project-GNB__logo {
+    width: 100px;   /* For dev */
+    height: 46px;   /* For dev */
+    background-color: var(--dev-img);   /* For dev */
+}
+
+.project-GNB__user-profile {
+    width: 44px;    /* For dev */
+    height: 44px;   /* For dev */
+    background-color: var(--dev-img);   /* For dev */
+}
+/* End Desktop size Project GNB bar */
+
+
+
+
+
+/* Start Mobile size Project GNB */
+@media screen and (max-width: 768px) {
+    .project-GNB {
+        width: 100vw;
+    }
+
+    .project-GNB-wrapper {
+        width: 100%;
+        height: 60px;
+        box-sizing: border-box;
+    }
+
+    .project-GNB__menu-btn {
+        width: 28px;
+        height: 28px;
+        background-color: var(--dev-img); /* For dev */
+    }
+
+    .project-GNB__channel-title {
+        text-align: center;
+    }
+
+    .project-GNB__channel-title h1 {
+        font-size: 16px;
+        color: var(--wemuz-red);
+    }
+
+    .project-GNB__channel-title h2 {
+        font-size: 12px;
+        color: var(--wemuz-gray);
+        margin-top: 6px;
+    }
+
+    .project-GNB__user-profile {
+        width: 32px;
+        height: 32px;
+        border-radius: 11px;
+    }
+}
+/* End Mobile size Project GNB */ 

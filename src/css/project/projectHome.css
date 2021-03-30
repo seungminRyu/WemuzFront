@@ -1,0 +1,198 @@
+/* wemuz basic style */
+@import '../style.css';
+
+/* Project component */
+@import './project_GNB.css';
+
+
+/* Start Desktop size Project home */
+.--m {
+    display: none;
+}
+
+
+/* Start home > banner */
+.project-banner {
+    width: 100%;
+    height: 452px;    
+    background-color: rgb(255, 203, 203); /* For dev */
+    margin-top: 80px;
+}
+
+.project-banner__slider-frame {
+    max-width: 1720px;
+    height: 452px;
+    box-shadow: 0 0 0 5px var(--dev-img) inset;  /* For dev */
+    margin: 0 auto;
+}
+
+.project-banner__slider {
+    display: flex;
+    height: 452px;
+}
+
+.project-banner__slide {
+    display: block;
+    float: left;
+    width: 100%;    /* For dev */
+    height: 100%;   /* For dev */
+    background-image: url('../../assets/img/sponsor__bg.png');   /* For dev */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-slide {
+    width: 100%;
+    height: 100%;
+    background-color: #12121294;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+/* End home > banner */
+
+
+
+
+/* Start home > my project */
+.project-myProject {
+    width: 100%;
+    background-color: rgb(192, 255, 190);   /* For dev */
+}
+
+.project-myProject__wrapper {
+    max-width: 1400px;
+    padding: 100px 20px 156px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.projects-section {
+    margin-top: 20px;
+    
+}
+
+.projects__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 178px;
+    height: 225px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding-top: 20px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+}
+
+.project div {
+    width: 88px;
+    height: 88px;
+    border-radius: 30px;
+    background-color: var(--dev-img);   /* For dev */
+}
+/* End home > my project */
+
+
+
+
+/* Start home > mukathon */
+.project-mukathon {
+    width: 100%;
+    background-color: rgb(194, 203, 255);   /* For dev */
+    overflow-x: hidden;
+}
+
+.project-mukathon__wrapper {
+    max-width: 1400px;
+    padding: 185px 20px 60px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.project-mukathon__slider-frame {
+    position: relative;
+    width: 1360px;
+    margin: 0 auto;
+    overflow-x: visible;
+}
+
+.project-mukathon__slider {
+    display: flex;
+    box-shadow: 0 0 0 5px var(--dev-img) inset;  /* For dev */
+    margin-top: 60px;
+}
+
+.project-mukathon__slide {
+    display: block;
+    float: left;
+    width: 329px;    /* For dev */
+    height: 406px;   /* For dev */
+    border-radius: 8px;
+    background-color: #fff;
+    margin-right: 48px;
+}
+
+.mukathon-slide__image {
+    width: 100%;
+    height: 238px;
+    background-image: url('../../assets/img/mukathon_benefit_1.png'); /* For dev */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-mukathon__progress-bar {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #777777;
+    margin-top: 44px;
+}
+
+.progress-bar {
+    width: 340px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #dddddd;
+}
+
+.project-mukathon__slider-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 136px;
+    margin: 52px auto 0;
+}
+
+.slider-btn-pre,
+.slider-btn-next {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: var(--dev-img);   /* For dev */
+}
+/* End home > mukathon */
+
+
+/* End Desktop size Project home */
+
+
+
+
+
+
+
+
+/* Start Mobile size Project home */
+@media screen and (max-width:768px) {
+    
+}
+/* End Mobile size Project home */
