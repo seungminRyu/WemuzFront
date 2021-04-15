@@ -20,13 +20,15 @@
     width: 100%;
     height: 100%;
     background-color: rgb(190, 255, 170);  /* For dev */
+    box-sizing: border-box;
+    padding: 0 20px;
 }
 
 .channel-wrapper {
     display: flex;
-    width: 1360px;
-    margin: 100px auto 0;
+    max-width: 1360px;
     background-color: rgb(179, 218, 255);  /* For dev */
+    margin: 100px auto 0;
 }
 
 
@@ -170,9 +172,10 @@
 
 /* Start channel > content */
 .content {
-    width: 1060px;
-    height: 400px;  /* For dev */
-    background-color: rgb(237, 179, 255);  /* For dev */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(243, 203, 255);  /* For dev */
 }
 
 .content-header {
