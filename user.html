@@ -30,8 +30,8 @@
                     <div class="main-profile-wrapper">
                         <div class="main-profile__user-info">
                             <img src="./src/assets/img/favicon.ico" alt="" class="user-avatar">
-                            <h5 class="user-name">유저 이름</h5>
-                            <p class="user-introduce">유저 소개</p>
+                            <h5 class="user-name">{유저 이름}</h5>
+                            <p class="user-introduce">{유저 소개}</p>
                             <div class="main-profile__edit-btn">
                                 <button class="edit-btn">프로필 수정</button>
                             </div>
@@ -69,6 +69,10 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="main-profile__user-introduce --m">
+                            <span>소개</span>
+                            <p class="user-introduce">{유저 소개}</p>
+                        </div>
                     </div>
                 </aside>
                 <div class="main-content">
@@ -84,29 +88,25 @@
                                 <ul class="project-list">
                                     <li class="project-item">
                                         <div class="project-item-wrapper">
-                                            <div class="project-item__left">
-                                                <div class="project-item__logo">
-                                                    <img src="./src/assets/img/favicon.ico" alt="" class="project-logo">
-                                                </div>
-                                                <div class="project-item__info">
-                                                    <h5 class="project-name">{청설모}</h5>
-                                                    <p class="project-state">{모집중}</p>
-                                                </div>
+                                            <div class="project-item__logo">
+                                                <img src="./src/assets/img/favicon.ico" alt="" class="project-logo">
                                             </div>
-                                            <div class="project-item__right">
-                                                <div class="project-item__team">
-                                                    <div class="team-avatar">
-                                                        <img src="./src/assets/img/favicon.ico" alt="" class="team-avatar-img">
-                                                    </div>
-                                                    <div class="team-info">
-                                                        <h5 class="team-name">{팀활동명}</h5>
-                                                        <p class="team-member-num">{팀활동명}</p>
-                                                    </div>
+                                            <div class="project-item__info">
+                                                <h5 class="project-name">{청설모}</h5>
+                                                <p class="project-state">{모집중}</p>
+                                            </div>
+                                            <div class="project-item__more-btn">
+                                                <button class="more-btn">
+                                                    더보기
+                                                </button>
+                                            </div>
+                                            <div class="project-item__team">
+                                                <div class="team-avatar">
+                                                    <img src="./src/assets/img/favicon.ico" alt="" class="team-avatar-img">
                                                 </div>
-                                                <div class="project-item__more-btn">
-                                                    <button class="more-btn">
-                                                        더보기
-                                                    </button>
+                                                <div class="team-info">
+                                                    <h5 class="team-name">{팀활동명}</h5>
+                                                    <p class="team-member-num">{팀활동명}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +145,45 @@
                                             </div>
                                             <div class="team-item__leader">
                                                 <img src="./src/assets/img/favicon.ico" alt="" class="team-leader-avatar">
-                                                <p class="team-member-num">{팀활동명}</p>
+                                                <p class="team-member-num">{리더 활동명}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="team-item">
+                                        <div class="team-item-wrapper">
+                                            <div class="team-item__avatar">
+                                                <img src="./src/assets/img/favicon.ico" alt="" class="team-avatar-img">
+                                            </div>
+                                            <div class="team-item__info">
+                                                <h5 class="team-name">{팀활동명}</h5>
+                                                <p class="team-state">{5명}</p>
+                                                <div class="team-music-info">
+                                                    <span class="area">{부산 해운대구}</span>
+                                                    <span class="genre">{포크 어쿠스틱}</span>
+                                                </div>
+                                            </div>
+                                            <div class="team-item__leader">
+                                                <img src="./src/assets/img/favicon.ico" alt="" class="team-leader-avatar">
+                                                <p class="team-member-num">{리더 활동명}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="team-item">
+                                        <div class="team-item-wrapper">
+                                            <div class="team-item__avatar">
+                                                <img src="./src/assets/img/favicon.ico" alt="" class="team-avatar-img">
+                                            </div>
+                                            <div class="team-item__info">
+                                                <h5 class="team-name">{팀활동명}</h5>
+                                                <p class="team-state">{5명}</p>
+                                                <div class="team-music-info">
+                                                    <span class="area">{부산 해운대구}</span>
+                                                    <span class="genre">{포크 어쿠스틱}</span>
+                                                </div>
+                                            </div>
+                                            <div class="team-item__leader">
+                                                <img src="./src/assets/img/favicon.ico" alt="" class="team-leader-avatar">
+                                                <p class="team-member-num">{리더 활동명}</p>
                                             </div>
                                         </div>
                                     </li>

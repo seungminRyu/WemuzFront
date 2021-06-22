@@ -1,6 +1,13 @@
 @import '../reset.css';
 @import '../style.css';
 
+.--m {
+    display: none;
+}
+
+
+
+
 .profile-container {
     width: 100%;
     background-color: rgb(194, 210, 255); /* for dev */
@@ -126,14 +133,25 @@
 
 .main-content__project .project-item-wrapper {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     background-color: rgb(253, 228, 190); /* for dev */   
 }
 
-.project-item__left,
-.project-item__right {
-    display: flex;
+.main-content__project .project-item__logo {
+    order: 1;
+}
+.main-content__project .project-item__info {
+    order: 2;
+}
+.main-content__project .project-item__team {
+    order: 3;
+}
+.main-content__project .project-item__more-btn {
+    order: 4;
+}
+
+.main-content__project .project-item__info {
+    margin-right: auto;
 }
 
 .main-content__project .project-item__team {
@@ -172,4 +190,153 @@
 
  .main-content__team .team-item__leader {
      display: flex;
+ }
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 1024px) {
+    .--m {
+        display: block;
+    }
+
+
+
+
+    .nav-menu__menu-list {
+        justify-content: center;
+    }
+
+
+
+
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .main-profile {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 32px 92px;
+        margin: 0;
+    }
+
+    .main-profile-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-profile__user-info {
+        order: 1;
+    }
+    .main-profile__link {
+        order: 2;
+    }
+    .main-profile__user-music-info {
+        order: 3;
+    }
+    .main-profile__user-introduce {
+        order: 4;
+    }
+
+    .main-profile__user-info .user-introduce {
+        display: none;
+    }
+
+    .main-profile__user-music-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-profile__user-music-info .music-info {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .main-profile__user-music-info .music-info.user-activity-area {
+        align-items: flex-start;
+    }
+
+    .main-profile__user-music-info .music-info.user-position {
+        align-items: center;
+    }
+
+    .main-profile__user-music-info .music-info.user-genre {
+        align-items: flex-end;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 768px) {
+    .nav-menu .menu-item {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+    .main-profile {
+        padding: 20px 28px;
+    }
+
+
+
+
+    .main-content__project .project-item-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-content__project .project-item__team {
+        order: 4;
+    }
+    .main-content__project .project-item__more-btn {
+        order: 3;
+    }
+
+    .main-content__project .project-item__team {
+        grid-column: 2 / 4;
+    }
+
+    .main-content__project .more-btn {
+        display: block;
+        margin-left: auto;
+    }
+
+
+
+
+    .main-content__team .team-item-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-content__team .team-item__avatar {
+        order: 2;
+    }
+    .main-content__team .team-item__info {
+        order: 1;
+    }
+    .main-content__team .team-item__leader {
+        order: 3;
+    }
+
+    .main-content__team .team-item__info {
+        align-items: flex-start;
+    }
  }
