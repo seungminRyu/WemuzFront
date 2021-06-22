@@ -28,14 +28,100 @@
             <div class="main-wrapper">
                 <aside class="main-profile">
                     <div class="main-profile-wrapper">
-                        <div class="main-profile__user-info"></div>
-                        <div class="main-profile__user-music-info"></div>
-                        <div class="main-profile__link"></div>
+                        <div class="main-profile__user-info">
+                            <img src="" alt="" class="user-avatar">
+                            <h5 class="user-name">유저 이름</h5>
+                            <p class="user-introduce">유저 소개</p>
+                            <div class="main-profile__edit-btn">
+                                <button class="edit-btn">프로필 수정</button>
+                            </div>
+                        </div>
+                        <div class="main-profile__user-music-info">
+                            <div class="user-activity-area">
+                                <span>활동 지역</span>
+                                <span class="activity-area">{금정구}</span>
+                            </div>
+                            <div class="user-position">
+                                <span>포지션</span>
+                                <span class="position">{보컬}</span>
+                            </div>
+                            <div class="user-genre">
+                                <span>장르</span>
+                                <span class="genre">{알앤비}</span>
+                            </div>
+                        </div>
+                        <div class="main-profile__link">
+                            <ul class="link-list">
+                                <li class="link-item --instagram"></li>
+                                <li class="link-item --soundcloud"></li>
+                                <li class="link-item --youtube"></li>
+                                <li class="link-item --spotify"></li>
+                                <li class="link-item --other"></li>
+                            </ul>
+                        </div>
                     </div>
                 </aside>
                 <div class="main-content">
-                    <article class="main-content__project"></article>
-                    <article class="main-content__team"></article>
+                    <article class="main-content__project">
+                        <div class="content-header">
+                            <div class="content-header-wrapper">
+                                <h3 class="content-title">내 프로젝트</h3>
+                                <a class="project-home-link" href="/program">프로젝트 둘러보기</a>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <div class="content-body-wrapper">
+                                <ul class="project-list">
+                                    <li class="project-item">
+                                        <div class="project-item-wrapper">
+                                            <img src="" alt="" class="project-logo">
+                                            <div class="project-item__info">
+                                                <h5 class="project-name">{청설모}</h5>
+                                                <p class="project-state">{모집중}</p>
+                                            </div>
+                                            <div class="project-item__team-info">
+                                                <h5 class="team-name">{팀활동명}</h5>
+                                                <p class="team-member-num">{팀활동명}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="main-content__team">
+                        <div class="content-header">
+                            <div class="content-header-wrapper">
+                                <h3 class="content-title">팀 리스트</h3>
+                                <div class="content-btn">
+                                    <button class="team-create-btn">팀 생성</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <div class="content-body-wrapper">
+                                <ul class="team-list">
+                                    <li class="team-item">
+                                        <div class="team-item-wrapper">
+                                            <img src="" alt="" class="team-avatar">
+                                            <div class="team-item__info">
+                                                <h5 class="team-name">{팀활동명}</h5>
+                                                <p class="team-state">{5명}</p>
+                                                <div class="team-music-info">
+                                                    <span class="area">{부산 해운대구}</span>
+                                                    <span class="genre">{포크 어쿠스틱}</span>
+                                                </div>
+                                            </div>
+                                            <div class="team-item__leader">
+                                                <img src="" alt="" class="team-leader-avatar">
+                                                <p class="team-member-num">{팀활동명}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </main>
