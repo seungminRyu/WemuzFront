@@ -37,31 +37,61 @@
                                     <div class="basic-info__name">
                                         <div class="basic-info__legend">
                                             <legend class="legend name">이름</legend>
+                                            <input type="text" class="data-input name">
                                         </div>
                                     </div>
                                     <div class="basic-info__alias">
                                         <div class="basic-info__legend">
                                             <legend class="legend alias">활동명</legend>
+                                            <input type="text" class="data-input alias">
                                         </div>
                                     </div>
                                     <div class="basic-info__activity-area">
                                         <div class="basic-info__legend">
-                                            <legend class="legend activity-area">활동 지역</legend>
+                                            <legend class="legend activity-area">
+                                                활동 지역
+                                                <button type="button" class="edit-activity-area-btn">지역변경</button>
+                                            </legend>
                                         </div>
                                     </div>
                                     <div class="basic-info__gender">
                                         <div class="basic-info__legend">
                                             <legend class="legend gender">성별</legend>
+                                            <input type="radio" name="gender" id="man">
+                                            <label for="man">남성</label>
+                                            <input type="radio" name="gender" id="woman">
+                                            <label for="woman">여성</label>
+                                            <input type="radio" name="gender" id="other">
+                                            <label for="other">비공개</label>
                                         </div>
                                     </div>
-                                    <div class="basic-info__birth-day">
+                                    <div class="basic-info__birth-date">
                                         <div class="basic-info__legend">
-                                            <legend class="legend birth-day">생년월일 (선택항목)</legend>
+                                            <legend class="legend birth-date">생년월일 (선택항목)</legend>
+                                            <select name="year" id="">
+                                                <option value="2000">2000</option>
+                                                <option value="1999">1999</option>
+                                                <option value="1998">1998</option>
+                                                <option value="1997">1997</option>
+                                            </select>
+                                            <select name="month" id="">
+                                                <option value="12">12</option>
+                                                <option value="11">11</option>
+                                                <option value="10">10</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                            <select name="day" id="">
+                                                <option value="31">31</option>
+                                                <option value="30">30</option>
+                                                <option value="29">29</option>
+                                                <option value="28">28</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="basic-info__introduce">
                                         <div class="basic-info__legend">
                                             <legend class="legend introduce">소개 메시지 (선택항목)</legend>
+                                            <textarea name="" id="" cols="30" rows="1"></textarea>
                                         </div>
                                     </div>
                                 </div>
