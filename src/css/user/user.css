@@ -219,6 +219,7 @@
     }
 
     .main-profile {
+        position: relative;
         width: 100%;
         box-sizing: border-box;
         padding: 32px 92px;
@@ -269,6 +270,15 @@
         align-items: flex-end;
     }
 
+    .main-profile__edit-btn {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+    }
+
+
+
+
     .main-content {
         width: 100%;
     }
@@ -292,6 +302,11 @@
 
     .main-profile {
         padding: 20px 28px;
+    }
+
+    .main-profile__edit-btn {
+        top: 16px;
+        right: 16px;
     }
 
 
@@ -321,6 +336,14 @@
 
 
 
+    .main-content__team .team-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-content__team .team-item {
+        height: 166px;
+    }
+    
     .main-content__team .team-item-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
