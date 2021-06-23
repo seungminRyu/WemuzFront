@@ -1,0 +1,55 @@
+@import '../reset.css';
+@import '../style.css';
+
+.--m {
+    display: none;
+}
+
+
+
+
+.edit-container {
+    width: 100%;
+    background-color: rgb(194, 210, 255); /* for dev */
+}
+
+
+
+
+.header {
+    width: 100%;
+    height: 260px;
+    background-color: rgb(253, 208, 190); /* for dev */
+}
+
+.header-wrapper {
+    text-align: center;
+    padding: 100px 74px;
+}
+
+
+
+
+.main {
+    max-width: 1044px;
+    margin: 0 auto;
+    background-color: rgb(190, 235, 253); /* for dev */
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.main-nav-menu {
+    width: 280px;
+    margin-right: 36px;
+    background-color: rgb(210, 253, 190); /* for dev */
+}
+
+
+
+
+.main-content {
+    width: 728px;
+    background-color: rgb(246, 190, 253); /* for dev */
+}
