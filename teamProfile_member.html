@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/user/team.css">
+    <title>팀 프로필</title>
+</head>
+<body>
+    <div class="profile-container">
+        <header class="header">
+            <div class="header-wrapper">
+                <h2 class="header__title">메뉴 타이틀</h2>
+                <h1 class="header__name">{팀 활동명}</h1>
+            </div>
+        </header>
+        <nav class="nav-menu">
+            <div class="nav-menu-wrapper">
+                <ul class="nav-menu__menu-list">
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">팀 프로젝트</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#">팀원 리스트</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="main-wrapper">
+                <aside class="main-profile">
+                    <div class="main-profile-wrapper">
+                        <div class="main-profile__team-info">
+                            <img src="./src/assets/img/favicon.ico" alt="" class="team-avatar">
+                            <h5 class="team-name">{팀 활동명}</h5>
+                            <p class="team-num">{팀원 명 수}</p>
+                            <p class="team-introduce">{팀 소개}</p>
+                            <div class="main-profile__edit-btn">
+                                <button class="edit-btn">
+                                    <a href="/edit" class="edit-link">프로필 수정</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="main-profile__team-music-info">
+                            <div class="music-info team-activity-area">
+                                <span>활동 지역</span>
+                                <span class="activity-area">{금정구}</span>
+                            </div>
+                            <div class="music-info team-genre">
+                                <span>장르</span>
+                                <span class="genre">{알앤비}</span>
+                            </div>
+                        </div>
+                        <div class="main-profile__link">
+                            <ul class="link-list">
+                                <li class="link-item">
+                                    <a href="" class="site-link --instagram"></a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="" class="site-link --soundcloud"></a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="" class="site-link --youtube"></a>
+                                </li>
+                                <li class="link-item">
+                                    <a href="" class="site-link --spotify"></a>
+                                </li>
+                                <li class="link-item --other">
+                                    <a href="" class="site-link --other"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-profile__team-introduce --m">
+                            <span>소개</span>
+                            <p class="team-introduce">{유저 소개}</p>
+                        </div>
+                    </div>
+                </aside>
+                <div class="main-content">
+                    <article class="main-content__member">
+                        <div class="content-header">
+                            <div class="content-header-wrapper">
+                                <h3 class="content-title">팀원 리스트</h3>
+                                <div class="content-btn">
+                                    <button class="add-member-btn">팀원 추가</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <div class="content-body-wrapper">
+                                <div class="member-num">
+                                    <span>6명</span>
+                                </div>
+                                <ul class="member-list">
+                                    <li class="member-item">
+                                        <div class="member-item-wrapper">
+                                            <div class="member-item__avatar">
+                                                <img src="./src/assets/img/favicon.ico" alt="" class="member-avatar-img">
+                                                <span class="leader-badge"></span>
+                                            </div>
+                                            <div class="member-item__info">
+                                                <h5 class="member-name">
+                                                    <span class="leader-badge"></span>{멤버 활동명}
+                                                </h5>
+                                                <p class="member-position">{보컬}</p>
+                                                <div class="member-music-info">
+                                                    <span class="area">{부산 해운대구}</span>
+                                                    <span class="genre">{포크 어쿠스틱}</span>
+                                                </div>
+                                            </div>
+                                            <div class="memeber-item__entry-program">
+                                                <div class="program-logo">
+                                                    <img src="./src/assets/img/favicon.ico" alt="" class="program-logo-img">
+                                                </div>
+                                                <div class="program-logo">
+                                                    <img src="./src/assets/img/favicon.ico" alt="" class="program-logo-img">
+                                                </div>
+                                                <div class="program-logo">
+                                                    <img src="./src/assets/img/favicon.ico" alt="" class="program-logo-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

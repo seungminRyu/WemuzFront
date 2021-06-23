@@ -1,0 +1,401 @@
+@import '../reset.css';
+@import '../style.css';
+
+.--m {
+    display: none;
+}
+
+
+
+
+.profile-container {
+    width: 100%;
+    background-color: rgb(194, 210, 255); /* for dev */
+}
+
+
+
+
+.header {
+    width: 100%;
+    height: 260px;
+    background-color: rgb(253, 208, 190); /* for dev */
+}
+
+.header-wrapper {
+    text-align: center;
+    padding: 100px 74px;
+}
+
+
+
+
+.nav-menu {
+    width: 100%;
+    background-color: rgb(190, 253, 195); /* for dev */
+}
+
+.nav-menu-wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.nav-menu__menu-list {
+    display: flex;
+}
+
+.menu-item {
+    padding: 16px 39px 14px;
+    background-color: rgb(244, 253, 190); /* for dev */
+}
+
+
+
+
+.main {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: rgb(190, 235, 253); /* for dev */
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.main-profile {
+    width: 296px;
+    margin-right: 40px;
+    background-color: rgb(210, 253, 190); /* for dev */
+}
+
+.main-profile-wrapper {
+    background-color: rgb(190, 253, 248); /* for dev */
+}
+
+.main-profile__team-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-profile__team-music-info {
+    width: 100%;
+}
+
+.main-profile__team-music-info .music-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-profile__link .link-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-profile__link .site-link {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-image: url('../../assets/img/favicon.ico'); /* for dev */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.main-content {
+    width: 688px;
+    background-color: rgb(246, 190, 253); /* for dev */
+}
+
+.content-header {
+    background-color: rgb(190, 253, 242); /* for dev */
+}
+
+.content-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-body-wrapper {
+    background-color: rgb(200, 253, 190); /* for dev */   
+}
+
+.main-content article {
+    padding-bottom: 245px;
+}
+
+.main-content__team-project .project-item-wrapper {
+    display: flex;
+    width: 100%;
+    background-color: rgb(253, 228, 190); /* for dev */   
+}
+
+.main-content__team-project .project-item__logo {
+    order: 1;
+}
+.main-content__team-project .project-item__info {
+    order: 2;
+}
+.main-content__team-project .project-item__entry-member {
+    order: 3;
+}
+.main-content__team-project .project-item__more-btn {
+    order: 4;
+}
+
+.main-content__team-project .project-item__info {
+    margin-right: auto;
+}
+
+.main-content__team-project .project-item__entry-member {
+    display: flex;
+}
+
+.main-content__member .member-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-content__member .member-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 334px;
+    background-color: rgb(253, 236, 190); /* for dev */   
+}
+
+.main-content__member .member-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-content__member .member-item__avatar {
+    position: relative;
+}
+
+.main-content__member .member-avatar-img {
+    display: block;
+    width: 88px;
+    height: 88px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.main-content__member .member-item__avatar .leader-badge {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% + 22px);
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    background-image: url('../../assets/img/favicon.ico');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-content__member .member-item__info {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .main-content__member .member-name .leader-badge {
+    display: none;
+ }
+
+ .main-content__member .memeber-item__entry-program {
+     display: flex;
+ }
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 1024px) {
+    .--m {
+        display: block;
+    }
+
+
+
+
+    .nav-menu__menu-list {
+        justify-content: center;
+    }
+
+
+
+
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .main-profile {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 32px 92px;
+        margin: 0;
+    }
+
+    .main-profile-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-profile__team-info {
+        order: 1;
+    }
+    .main-profile__link {
+        order: 2;
+    }
+    .main-profile__team-music-info {
+        order: 3;
+    }
+    .main-profile__team-introduce {
+        order: 4;
+    }
+
+    .main-profile__team-info .team-introduce {
+        display: none;
+    }
+
+    .main-profile__team-music-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-profile__team-music-info .music-info {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .main-profile__team-music-info .music-info.team-activity-area {
+        align-items: flex-start;
+    }
+
+    .main-profile__team-music-info .music-info.team-genre {
+        align-items: flex-end;
+    }
+
+    .main-profile__edit-btn {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+    }
+
+
+
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 768px) {
+    .nav-menu .menu-item {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+    .main-profile {
+        padding: 20px 28px;
+    }
+
+    .main-profile__edit-btn {
+        top: 16px;
+        right: 16px;
+    }
+
+
+
+
+    .main-content__team-project .project-item-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-content__team-project .project-item__entry-member {
+        order: 4;
+    }
+    .main-content__team-project .project-item__more-btn {
+        order: 3;
+    }
+
+    .main-content__team-project .project-item__entry-member {
+        grid-column: 2 / 4;
+    }
+
+    .main-content__team-project .more-btn {
+        display: block;
+        margin-left: auto;
+    }
+
+
+
+
+    .main-content__member .member-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-content__member .member-item {
+        height: 166px;
+    }
+    
+    .main-content__member .member-item-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-content__member .member-item__avatar {
+        order: 2;
+    }
+    .main-content__member .member-item__info {
+        order: 1;
+    }
+    .main-content__member .memeber-item__entry-program {
+        order: 3;
+    }
+
+    .main-content__member .member-item__avatar .leader-badge {
+        display: none;
+    }
+
+    .main-content__member .member-item__info {
+        align-items: flex-start;
+    }
+
+    .main-content__member .member-name .leader-badge {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
+        background-image: url('../../assets/img/favicon.ico');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+ }
