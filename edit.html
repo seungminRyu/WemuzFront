@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/user/edit.css">
+    <script src="./src/js/edit/edit.js"></script>
     <title>프로필 수정</title>
 </head>
 <body>
@@ -25,8 +26,8 @@
                     </ul>
                 </aside>
                 <div class="main-content">
-                    <article class="main-content__edit-profile">
-                        <form class="edit-profile-form" action="" method="post">
+                    <article class="edit-profile">
+                        <form class="edit-profile__form" action="" method="post">
                             <fieldset class="basic-info">
                                 <div class="basic-info-wrapper">
                                     <div class="basic-info__header">
@@ -37,13 +38,13 @@
                                     <div class="basic-info__name">
                                         <div class="basic-info__legend">
                                             <legend class="legend name">이름</legend>
-                                            <input type="text" class="data-input name">
+                                            <input type="text" class="data-input name" value="{현재 이름}">
                                         </div>
                                     </div>
                                     <div class="basic-info__alias">
                                         <div class="basic-info__legend">
                                             <legend class="legend alias">활동명</legend>
-                                            <input type="text" class="data-input alias">
+                                            <input type="text" class="data-input alias" value="{현재 활동명}">
                                         </div>
                                     </div>
                                     <div class="basic-info__activity-area">
@@ -52,12 +53,16 @@
                                                 활동 지역
                                                 <button type="button" class="edit-activity-area-btn">지역변경</button>
                                             </legend>
+                                            <input type="hidden" class="data-input activity-area" value="">
+                                            <span class="current-activity-area">
+                                                {현재 활동 지역}
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="basic-info__gender">
                                         <div class="basic-info__legend">
                                             <legend class="legend gender">성별</legend>
-                                            <input type="radio" name="gender" id="man">
+                                            <input type="radio" name="gender" id="man" checked>
                                             <label for="man">남성</label>
                                             <input type="radio" name="gender" id="woman">
                                             <label for="woman">여성</label>
@@ -91,14 +96,93 @@
                                     <div class="basic-info__introduce">
                                         <div class="basic-info__legend">
                                             <legend class="legend introduce">소개 메시지 (선택항목)</legend>
-                                            <textarea name="" id="" cols="30" rows="1"></textarea>
+                                            <textarea name="" id="" cols="30" rows="1">{현재 메시지}</textarea>
                                         </div>
                                     </div>
                                 </div>
                             </fieldset>
-                            <fieldset class="music-info"></fieldset>
-                            <fieldset class="sns-info"></fieldset>
+                            <fieldset class="music-info">
+                                <div class="music-info__header">
+                                    <h3>나의 음악</h3>
+                                </div>
+                                <div class="music-info__position">
+                                    <div class="music-info__wrapper">
+                                        <legend class="legend position">
+                                            선호 포지션
+                                            <button type="button" class="position-btn">포지션 변경</button> 
+                                        </legend>
+                                        <input type="hidden" class="data-input position" value="">
+                                        <span class="current-position">{현재 포지션}</span>
+                                    </div>
+                                </div>
+                                <div class="music-info__genre">
+                                    <div class="music-info__wrapper">
+                                        <legend class="legend genre">
+                                            선호 장르
+                                            <button type="button" class="genre-btn">장르 변경</button> 
+                                        </legend>
+                                        <input type="hidden" class="data-input genre" value="">
+                                        <span class="current-genre">{현재 장르}</span>
+                                    </div>
+                                </div>
+                                <div class="music-info__prefer-artist">
+                                    <div class="music-info__wrapper">
+                                        <legend class="legend prefer-artist">
+                                            선호 아티스트
+                                            <button type="button" class="prefer-artist-btn">아티스트 변경</button> 
+                                        </legend>
+                                        <input type="hidden" class="data-input prefer-artist" value="">
+                                        <input type="hidden" class="data-input prefer-artist" value="">
+                                        <input type="hidden" class="data-input prefer-artist" value="">
+                                        <ul class="current-prefer-artist-list">
+                                            <li class="prefer-artist">
+                                                아티스트 1
+                                            </li>
+                                            <li class="prefer-artist">
+                                                아티스트 2
+                                            </li>
+                                            <li class="prefer-artist">
+                                                아티스트 3
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="sns-info">
+                                <div class="sns-info__header">
+                                    <h3>나의 SNS</h3>
+                                </div>
+                                <div class="sns-info__prefer-artist">
+                                    <div class="sns-info__wrapper">
+                                        <legend class="legend instagram">
+                                            instagram
+                                        </legend>
+                                        <input type="text" class="data-input instagram" value="">
+                                        <legend class="legend soundcloud">
+                                            soundcloud
+                                        </legend>
+                                        <input type="text" class="data-input soundcloud" value="">
+                                        <legend class="legend youtube">
+                                            youtube
+                                        </legend>
+                                        <input type="text" class="data-input youtube" value="">
+                                        <legend class="legend spotify">
+                                            spotify
+                                        </legend>
+                                        <input type="text" class="data-input spotify" value="">
+                                        <legend class="legend other">
+                                            기타
+                                        </legend>
+                                        <input type="text" class="data-input other" value="">
+                                    </div>
+                                </div>
+                            </fieldset>
                         </form>
+                        <div class="edit-profile__submit-btn">
+                            <button type="submit" class="submit-btn">
+                                수정 완료
+                            </button>
+                        </div>
                     </article>
                 </div>
             </div>
