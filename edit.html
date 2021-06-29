@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/user/edit.css">
-    <script src="./src/js/edit/edit.js"></script>
+    <script src="./src/js/edit/edit.js" type="module" defer></script>
     <title>프로필 수정</title>
 </head>
 <body>
@@ -34,17 +34,21 @@
                                         <h3>나의 기본 정보</h3>
                                     </div>
                                     <div class="basic-info__avatar">
+                                        <img class="user-avatar-img" src="./src/assets/img/favicon.ico" alt="프로필 사진" style="display: block; width: 80px; height: 80px; object-fit: contain;">
+                                        <input type="file" class="data-input avatar">
                                     </div>
                                     <div class="basic-info__name">
                                         <div class="basic-info__legend">
                                             <legend class="legend name">이름</legend>
                                             <input type="text" class="data-input name" value="{현재 이름}">
+                                            <p class="error-text name"></p>
                                         </div>
                                     </div>
                                     <div class="basic-info__alias">
                                         <div class="basic-info__legend">
                                             <legend class="legend alias">활동명</legend>
                                             <input type="text" class="data-input alias" value="{현재 활동명}">
+                                            <p class="error-text alias"></p>
                                         </div>
                                     </div>
                                     <div class="basic-info__activity-area">

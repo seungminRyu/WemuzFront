@@ -1,3 +1,6 @@
+import Avatar from "./Avatar.js";
+import Alias from "./alias.js";
+
 class App {
     constructor({target, initialData}) {
         this.$target = target;
@@ -6,8 +9,12 @@ class App {
             $submitBtn: this.$target.querySelector('.submit-btn'),
         }
         this.components = {
-            name: 'name component',
-            alias: 'alias component',
+            avatar: new Avatar({
+                target: this.$target.querySelector('.basic-info__avatar')
+            }),
+            alias: new Alias({
+                target: this.$target.querySelector('.basic-info__alias')
+            }),
             activityArea: 'activity-area component',
             birthData: 'birthData component',
             introduce: 'introduce component',
