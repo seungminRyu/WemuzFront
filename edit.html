@@ -77,30 +77,25 @@
                                     <div class="basic-info__birth-date">
                                         <div class="basic-info__legend">
                                             <legend class="legend birth-date">생년월일 (선택항목)</legend>
-                                            <select name="year" id="">
-                                                <option value="2000">2000</option>
-                                                <option value="1999">1999</option>
-                                                <option value="1998">1998</option>
-                                                <option value="1997">1997</option>
+                                            <select class="data-input birth-year" name="year" id="">
+                                                <option value="">년</option>
                                             </select>
-                                            <select name="month" id="">
-                                                <option value="12">12</option>
-                                                <option value="11">11</option>
-                                                <option value="10">10</option>
-                                                <option value="9">9</option>
+                                            <select class="data-input birth-month" name="month" id="">
+                                                <option value="">월</option>
                                             </select>
-                                            <select name="day" id="">
-                                                <option value="31">31</option>
-                                                <option value="30">30</option>
-                                                <option value="29">29</option>
-                                                <option value="28">28</option>
+                                            <select class="data-input birth-day" name="day" id="">
+                                                <option value="">일</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="basic-info__introduce">
                                         <div class="basic-info__legend">
                                             <legend class="legend introduce">소개 메시지 (선택항목)</legend>
-                                            <textarea name="" id="" cols="30" rows="1">{현재 메시지}</textarea>
+                                            <textarea class="data-input introduce" name="" id="" cols="30" rows="1">{현재 메시지}</textarea>
+                                            <div class="helper-text">
+                                                <p class="error-text introduce"></p>
+                                                <p class="introduce-text-count"><span class="count-num">0</span>/150</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -12,7 +12,6 @@ export default class Alias {
         this.$target = target;
         this.state = {
             isValid: false,
-            errorMessage: '',
         }
         this.elements = {
             $input: this.$target.querySelector('.data-input'),
@@ -36,7 +35,6 @@ export default class Alias {
 
             for (let i = 0; i < alias.length; i++) {
                 const char = alias.charAt(i)
-        
                 // 문자가 한글일 경우 유효성 검사 실행
                 if (checkIsKor(char)) {
                     if (korCheck.test(char)) {
@@ -160,6 +158,7 @@ export default class Alias {
         const onAliasInput = async (val) => {
             const inputAlias = val;
             const validState = await checkAliasValid(inputAlias);
+
             setIsValid(validState);
             setErrorMessage(validState);
             this.render();

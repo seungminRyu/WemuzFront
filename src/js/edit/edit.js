@@ -1,8 +1,10 @@
 import Avatar from "./Avatar.js";
 import Alias from "./alias.js";
+import BirthDate from "./BirthDate.js";
+import Introduce from "./Introduce.js";
 
 class App {
-    constructor({target, initialData}) {
+    constructor(target, initialData) {
         this.$target = target;
         this.data = initialData;
         this.elements = {
@@ -13,11 +15,15 @@ class App {
                 target: this.$target.querySelector('.basic-info__avatar')
             }),
             alias: new Alias({
-                target: this.$target.querySelector('.basic-info__alias')
+                target: this.$target.querySelector('.basic-info__alias'),
             }),
             activityArea: 'activity-area component',
-            birthData: 'birthData component',
-            introduce: 'introduce component',
+            birthData: new BirthDate({
+                target: this.$target.querySelector('.basic-info__birth-date')
+            }),
+            introduce: new Introduce(
+                this.$target.querySelector('.basic-info__introduce'),
+            ),
             position: 'position component',
             genre: 'genre component',
             links: 'links component',
@@ -58,10 +64,8 @@ class App {
 }
 
 window.addEventListener('load', () => {
-    new App({
-        target: document.querySelector('.edit-profile'),
-        initialData: {
-
-        }
-    });
+    new App(
+        document.querySelector('.edit-profile'),
+        {},    
+    );
 })
